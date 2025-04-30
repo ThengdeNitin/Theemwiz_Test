@@ -20,6 +20,13 @@ export default [
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
     },
+    theme: {
+      extend: {
+        fontFamily: {
+          epilogue: ['Epilogue', 'sans-serif'],
+        },
+      },
+    },
     rules: {
       ...js.configs.recommended.rules,
       ...reactHooks.configs.recommended.rules,
