@@ -2,6 +2,8 @@ import './App.css'
 import Main from './components/main'
 import Expsection from './components/expsection'
 import Lastestworking from './components/lastestworking'
+import Pricing from './components/pricingsection'
+import Footer from './components/footer'
 
 function App() {
 
@@ -10,6 +12,8 @@ function App() {
     <Main/>
     <Expsection/>
     <Lastestworking/>
+    <Pricing/>
+    <Footer/>
     </>
   )
 }
