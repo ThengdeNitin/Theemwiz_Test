@@ -11,13 +11,14 @@ import azah from "../assets/lastestworking/Azah.png";
 import izabella from "../assets/lastestworking/Izabella.png";
 import leonardo from "../assets/lastestworking/Leonardo.png";
 import roelof from "../assets/lastestworking/Roelof.png";
-import arrow from "../assets/lastestworking/arrow.png"
+import arrow from "../assets/lastestworking/arrow.png";
+import triangle from "../assets/footer/Triangle.png";
 
 function Lastestworking() {
   return (
     <>
       <div className="bg-[#1f2538] text-white">
-        <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-30">
+        <main className="hidden md:block max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-30">
           <section aria-label="Portfolio Latest Work" className="mb-20">
             <p className="text-[16px] text-[#d46a5e] uppercase tracking-widest mb-2 text-center">
               Portfolio
@@ -143,7 +144,7 @@ function Lastestworking() {
                 src={rightgirl}
                 alt="rightgirl"
                 className="h-full w-auto object-contain "
-                style={{height: 396, width:239, marginTop:120}}
+                style={{ height: 396, width: 239, marginTop: 120 }}
               />
             </div>
           </section>
@@ -159,59 +160,290 @@ function Lastestworking() {
               Team of Designers and Developers
             </h2>
             <div className="flex justify-end space-x-4 mb-8">
-              <img src={arrow} alt="arrow" className="h-auto w-auto"/>
+              <img src={arrow} alt="arrow" className="h-auto w-auto" />
             </div>
 
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
-              
-            <div className="flex flex-col">
-              <div className="border rounded-lg p-6 h-[250px] flex items-end justify-center">
-                <img src={azah} alt="azah" className="h-[247px] w-[196px] object-contain -mb-[28px]" />
+              <div className="flex flex-col">
+                <div className="border rounded-lg p-6 h-[250px] flex items-end justify-center">
+                  <img
+                    src={azah}
+                    alt="azah"
+                    className="h-[247px] w-[196px] object-contain -mb-[28px]"
+                  />
+                </div>
+                <div className="text-left">
+                  <p className="font-bold text-white text-[24px] mt-3">
+                    Azah Anyeni
+                  </p>
+                  <p className="text-[16px] text-[#7a7a7a] mt-1">Designer</p>
+                </div>
               </div>
-              <div className="text-left">
-              <p className="font-bold text-white text-[24px] mt-3">Azah Anyeni</p>
-              <p className="text-[16px] text-[#7a7a7a] mt-1">Designer</p>
-              </div>
-            </div>  
 
+              <div className="flex flex-col">
+                <div className="border rounded-lg p-4 h-[250px] flex items-end justify-center">
+                  <img
+                    src={roelof}
+                    alt="roelof"
+                    className="h-[235px] w-[289px] object-contain -mb-[42px]"
+                  />
+                </div>
+                <div className="mt-3">
+                  <p className="font-bold text-white text-[24px]">
+                    Roelof Bekkenenks
+                  </p>
+                  <p className="text-[16px] text-[#7a7a7a] mt-1">
+                    React Developer
+                  </p>
+                </div>
+              </div>
 
-            <div className="flex flex-col">
-              <div className="border rounded-lg p-4 h-[250px] flex items-end justify-center">
-              <img src={roelof} alt="roelof" className="h-[235px] w-[289px] object-contain -mb-[42px]"/>
+              <div className="flex flex-col">
+                <div className="border rounded-lg p-4 h-[250px] flex items-end justify-center">
+                  <img
+                    src={leonardo}
+                    alt="leonardo"
+                    className="h-[238px] w-[205px] object-contain -mb-[16px]"
+                  />
+                </div>
+                <div className="mt-3">
+                  <p className="font-bold text-white text-[24px]">
+                    Leonardo Oliveira
+                  </p>
+                  <p className="text-[16px] text-[#7a7a7a] mt-1">Illustrator</p>
+                </div>
               </div>
-              <div className="mt-3">
-              <p className="font-bold text-white text-[24px]">Roelof Bekkenenks</p>
-                <p className="text-[16px] text-[#7a7a7a] mt-1">React Developer</p>
-              </div>
-            </div>
 
-            <div className="flex flex-col">
-              <div className="border rounded-lg p-4 h-[250px] flex items-end justify-center">
-              <img src={leonardo} alt="leonardo" className="h-[238px] w-[205px] object-contain -mb-[16px]"/>
+              <div className="flex flex-col">
+                <div className="border rounded-lg p-4 h-[250px] flex items-end justify-center">
+                  <img
+                    src={izabella}
+                    alt="izabella"
+                    className="h-[233px] w-[230px] object-contain -mb-[29px]"
+                  />
+                </div>
+                <div className="mt-3">
+                  <p className="font-bold text-white text-[24px]">
+                    Izabella Tabakova
+                  </p>
+                  <p className="text-[16px] text-[#7a7a7a] mt-1">
+                    Product Designer
+                  </p>
+                </div>
               </div>
-              <div className="mt-3">
-              <p className="font-bold text-white text-[24px]">
-                  Leonardo Oliveira
-                </p>
-                <p className="text-[16px] text-[#7a7a7a] mt-1">Illustrator</p>
-              </div>
-            </div>
-
-            <div className="flex flex-col">
-              <div className="border rounded-lg p-4 h-[250px] flex items-end justify-center">
-              <img src={izabella} alt="izabella" className="h-[233px] w-[230px] object-contain -mb-[29px]"/>
-              </div>
-              <div className="mt-3">
-              <p className="font-bold text-white text-[24px]">
-                  Izabella Tabakova
-                </p>
-                <p className="text-[16px] text-[#7a7a7a] mt-1">Product Designer</p>
-              </div>
-            </div>
-
             </div>
             <div className="flex justify-center mt-16 space-x-2">
               <span className="w-2.5 h-2.5 rounded-full bg-[#d46a5e]"></span>
+              <span className="w-2.5 h-2.5 rounded-full border border-[#3a3f5c]"></span>
+              <span className="w-2.5 h-2.5 rounded-full border border-[#3a3f5c]"></span>
+            </div>
+          </section>
+        </main>
+
+        {/*Mobile */}
+        <main className="flex-col block md:hidden max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-30">
+          <section aria-label="Portfolio Latest Work" className="mb-40">
+            <p className="text-[16px] text-[#d46a5e] uppercase tracking-widest mb-2 text-center">
+              Portfolio
+            </p>
+            <h2 className="text-[56px] font-extrabold text-center mb-6">
+              Latest Work
+            </h2>
+            <div className="relative flex w-full">
+              <select
+                aria-label="Subject"
+                className="appearance-none w-full border border-[#E37B65] rounded-sm px-3 py-2 text-sm text-[#A78B5B] focus:outline-none focus:ring-1 focus:ring-[#E06A4F] bg-white"
+              >
+                <option disabled selected>
+                  Select All
+                </option>
+                <option>Design</option>
+                <option>Branding</option>
+                <option>Illustration</option>
+                <option>Motion</option>
+              </select>
+
+              <img
+                src={triangle}
+                alt="dropdown arrow"
+                className="pointer-events-none absolute right-3 top-1/2 transform -translate-y-1/2 w-[10px] h-[6px]"
+              />
+            </div>
+
+            <div className="flex flex-col gap-8 max-w-7xl mx-auto mt-8">
+              <article className="relative rounded-lg w-full h-[416px] overflow-hidden cursor-pointer">
+                <img
+                  src={sofa}
+                  alt="sofa"
+                  className="h-full w-full object-cover"
+                />
+                <div className="absolute top-75 left-8 bg-white text-[#1f2538] text-[10px] font-semibold rounded-full px-3 py-1 select-none">
+                  Design
+                </div>
+                <h3 className="absolute bottom-8 left-8 text-white text-[40px] font-extrabold drop-shadow-lg select-none">
+                  SOFA
+                </h3>
+              </article>
+
+              <article className="relative rounded-lg w-full h-[416px] overflow-hidden cursor-pointer">
+                <img
+                  src={keyboard}
+                  alt="keyboard"
+                  className="h-full w-full object-cover"
+                />
+                <div className="absolute top-75 left-8 bg-white text-[#1f2538] text-[10px] font-semibold rounded-full px-3 py-1 select-none">
+                  Branding
+                </div>
+                <h3 className="absolute bottom-8 left-8 text-white text-[40px] font-extrabold drop-shadow-lg select-none">
+                  KeyBoard
+                </h3>
+              </article>
+
+              <article className="relative rounded-lg w-full h-[416px] overflow-hidden cursor-pointer">
+                <img
+                  src={workmedia}
+                  alt="workmedia"
+                  className="h-full w-full object-cover"
+                />
+                <div className="absolute top-75 left-8 bg-white text-[#1f2538] text-[10px] font-semibold rounded-full px-3 py-1 select-none">
+                  Illustration
+                </div>
+                <h3 className="absolute bottom-8 left-8 text-white text-[40px] font-extrabold drop-shadow-lg select-none">
+                  Work Media
+                </h3>
+              </article>
+            </div>
+
+            <div className="flex justify-center mt-12">
+              <button className="text-[10px] font-semibold text-white border border-white px-4 py-2 hover:border-purple-500">
+                EXPLORE MORE
+              </button>
+            </div>
+          </section>
+
+          <section
+            aria-label="Get Started Help Companies Move Faster"
+            className="bg-[#fff6ef] rounded-lg max-w-7xl mx-auto flex flex-col sm:flex-row items-center h-auto justify-between px-8 py-0 gap-6 mb-30">
+            <div className="flex flex-col items-start max-w-sm space-y-3">
+              <img src={icon} alt="icon" className="h-auto w-auto -mt-[75px]" />
+              <p className="text-[16px] text-[#d46a5e] uppercase tracking-widest mt-2 font-semibold">
+                Get Started
+              </p>
+              <h3 className="text-[24px] font-extrabold mt-2 text-[#1f2538]">
+                We Help Companies Move Faster
+              </h3>
+              <button className="bg-[#d46a5e] text-white text-[16px] w-[154px] h-[58px] font-semibold rounded px-4 py-2 mt-4 hover:bg-[#b85a4d] transition-colors duration-300">
+                CONTACT US
+              </button>
+            </div>
+
+            <img
+              src={block}
+              alt="block"
+              className="h-[232px] w-[351px] object-contain "
+            />
+
+            <div
+              className="h-full w-[230px] bg-no-repeat bg-contain bg-center flex items-end justify-center -mt-[50px]"
+              style={{ backgroundImage: `url(${path})` }}
+            >
+              <img
+                src={rightgirl}
+                alt="rightgirl"
+                className="object-contain align-middle"
+                style={{ height: 317, width: 191 }}
+              />
+            </div>
+          </section>
+
+          <section
+            aria-label="Team of Designers and Developers"
+            className="max-w-5xl mx-auto"
+          >
+            <p className="text-[16px] text-[#d46a5e] uppercase tracking-widest mb-2">
+              Our Team
+            </p>
+            <h2 className="text-[40px] font-extrabold mb-8 w-[329px] h-[144px] leading-[48px]">
+              Team of Designers and Developers
+            </h2>
+
+            <div className="flex flex-row gap-2 overflow-hidden">
+              <div className="flex flex-col !w-[270px] !h-[272px] flex-shrink-0">
+                <div className="border rounded-lg p-6 h-[250px] flex items-end justify-center">
+                  <img
+                    src={azah}
+                    alt="azah"
+                    className="h-[247px] w-[196px] object-contain -mb-[23px]"
+                  />
+                </div>
+                <div className="text-left">
+                  <p className="font-bold text-white text-[24px] mt-3">
+                    Azah Anyeni
+                  </p>
+                  <p className="text-[16px] text-[#7a7a7a] mt-1">Designer</p>
+                </div>
+              </div>
+
+              <div className="flex flex-col flex-shrink-0">
+                <div className="border rounded-lg p-4 h-[250px] flex items-end justify-center">
+                  <img
+                    src={roelof}
+                    alt="roelof"
+                    className="h-[235px] w-[289px] object-contain -mb-[16px]"
+                  />
+                </div>
+                <div className="mt-3">
+                  <p className="font-bold text-white text-[24px]">
+                    Roelof Bekkenenks
+                  </p>
+                  <p className="text-[16px] text-[#7a7a7a] mt-1">
+                    React Developer
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex flex-col flex-shrink-0">
+                <div className="border rounded-lg p-4 h-[250px] flex items-end justify-center">
+                  <img
+                    src={leonardo}
+                    alt="leonardo"
+                    className="h-[238px] w-[205px] object-contain -mb-[16px]"
+                  />
+                </div>
+                <div className="mt-3">
+                  <p className="font-bold text-white text-[24px]">
+                    Leonardo Oliveira
+                  </p>
+                  <p className="text-[16px] text-[#7a7a7a] mt-1">Illustrator</p>
+                </div>
+              </div>
+
+              <div className="flex flex-col flex-shrink-0">
+                <div className="border rounded-lg p-4 h-[250px] flex items-end justify-center">
+                  <img
+                    src={izabella}
+                    alt="izabella"
+                    className="h-[233px] w-[230px] object-contain -mb-[29px]"
+                  />
+                </div>
+                <div className="mt-3">
+                  <p className="font-bold text-white text-[24px]">
+                    Izabella Tabakova
+                  </p>
+                  <p className="text-[16px] text-[#7a7a7a] mt-1">
+                    Product Designer
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div className="flex justify-center mt-16 space-x-2">
+              <span className="w-2.5 h-2.5 rounded-full bg-[#d46a5e]"></span>
+              <span className="w-2.5 h-2.5 rounded-full border border-[#3a3f5c]"></span>
+              <span className="w-2.5 h-2.5 rounded-full border border-[#3a3f5c]"></span>
+              <span className="w-2.5 h-2.5 rounded-full border border-[#3a3f5c]"></span>
               <span className="w-2.5 h-2.5 rounded-full border border-[#3a3f5c]"></span>
               <span className="w-2.5 h-2.5 rounded-full border border-[#3a3f5c]"></span>
             </div>
