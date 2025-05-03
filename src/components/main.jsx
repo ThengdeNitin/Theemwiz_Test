@@ -18,7 +18,7 @@ function Main() {
             className="hidden md:flex items-center space-x-2 absolute"
             style={{
               top: "16px",
-              left: "135px",
+              left: "165px",
               width: "152px",
               height: "48px",
             }}
@@ -26,32 +26,32 @@ function Main() {
             <img src={agencyLogo} alt="Agency Logo" className="h-full w-auto" />
           </div>
 
-          <nav className="hidden md:flex space-x-20 text-sm font-normal text-white absolute"
+          <nav className="hidden md:flex space-x-20 text-sm font-epilogue text-white absolute"
           style={{
             width: "515px",
             height: "32px",
             top: "28px",
             left: "530px",
           }}>
-            <a className="hover:underlin" href="#">
+            <a className="hover:underlin font-epilogue" href="#">
               About
             </a>
-            <a className="hover:underline" href="#">
+            <a className="hover:underline font-epilogue" href="#">
               Services
             </a>
-            <a className="hover:underline" href="#">
+            <a className="hover:underline font-epilogue" href="#">
               Pricing
             </a>
-            <a className="hover:underline" href="#">
+            <a className="hover:underline font-epilogue" href="#">
               Blog
             </a>
           </nav>
-          <button class="hidden md:block border border-gray-500 text-white font-bold text-xs px-7 py-2 rounded hover:bg-[#f36e4d] hover:border-[#f36e4d] absolute"
+          <button class="hidden md:block border border-gray-500 text-white font-bold text-xs px-7 py-2 rounded hover:bg-[#f36e4d] hover:border-[#f36e4d] font-epilogue absolute"
           style={{
             width: "138px",
             height: "48px",
             top: "16px",
-            left: "1250px",
+            left: "1220px",
           }}>
             CONTACT
           </button>
@@ -77,11 +77,11 @@ function Main() {
             <img src={menu} alt="menu" className="h-full w-auto" />
           </button>
           {isOpen && (
-        <div className="md:hidden text-center absolute w-[150px] top-[60px] left-53 right-4 bg-[#2b3045] rounded shadow-lg z-50 px-4 py-3 space-y-2">
-          <a className="block hover:underline" href="#">About</a>
-          <a className="block hover:underline" href="#">Services</a>
-          <a className="block hover:underline" href="#">Pricing</a>
-          <a className="block hover:underline" href="#">Blog</a>
+        <div className="md:hidden text-center font-epilogue absolute w-[150px] top-[60px] left-53 right-4 bg-[#2b3045] rounded shadow-lg z-50 px-4 py-3 space-y-2">
+          <a className="block hover:underline font-epilogue" href="#">About</a>
+          <a className="block hover:underline font-epilogue" href="#">Services</a>
+          <a className="block hover:underline font-epilogue" href="#">Pricing</a>
+          <a className="block hover:underline font-epilogue" href="#">Blog</a>
         </div>
       )}
         </header>
@@ -128,8 +128,8 @@ function Main() {
                 className="h-auto max-w-full"
               />
               <div className="text-gray-400 text-xs w-[327px] h-[32px] font-epilogue">
-                <p className="mb-1 md:text-[16px]">"Put themselves in the merchant's shoes"</p>
-                <p className="text-white font-normal md:text-[16px]">Meta Inc.</p>
+                <p className="mb-1 md:text-[16px] font-epilogue">"Put themselves in the merchant's shoes"</p>
+                <p className="text-white font-normal md:text-[16px] font-epilogue">Meta Inc.</p>
               </div>
             </div>
           </section>
@@ -188,8 +188,8 @@ function Main() {
                 className="h-auto max-w-full"
               />
               <div className="text-gray-400 mt-8 mb-2 text-xs w-[265px] h-[64px] font-epilogue">
-                <p className="mb-1 md:text-[16px]">"Put themselves in the merchant's shoes"</p>
-                <p className="text-white font-normal md:text-[16px]">Meta Inc.</p>
+                <p className="mb-1 md:text-[16px] font-epilogue">"Put themselves in the merchant's shoes"</p>
+                <p className="text-white font-normal md:text-[16px] font-epilogue">Meta Inc.</p>
               </div>
             </div>
           </section>

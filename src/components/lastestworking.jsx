@@ -20,26 +20,26 @@ function Lastestworking() {
       <div className="bg-[#1f2538] text-white">
         <main className="hidden md:block max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-30">
           <section aria-label="Portfolio Latest Work" className="mb-20">
-            <p className="text-[16px] text-[#d46a5e] uppercase tracking-widest mb-2 text-center">
+            <p className="text-[16px] font-epilogue text-[#d46a5e] uppercase tracking-widest mb-2 text-center">
               Portfolio
             </p>
-            <h2 className="text-[56px] font-extrabold text-center mb-6">
+            <h2 className="text-[56px] font-epilogue font-extrabold text-center mb-6">
               Latest Work
             </h2>
             <nav className="flex justify-center space-x-12 text-xs text-[#7a7a7a] mb-10 font-semibold">
-              <button className="relative after:content-['14'] after:absolute text-white after:-top-2 after:-right-3 after:bg-[#1f2538] after:text-[#7a7a7a] after:text-[10px] after:font-semibold after:px-[4px] after:rounded-full">
+              <button className="relative after:content-['14'] after:absolute text-white after:-top-2 after:-right-3 after:bg-[#1f2538] after:text-[#7a7a7a] font-epilogue after:text-[10px] after:font-semibold after:px-[4px] after:rounded-full">
                 Show All
               </button>
-              <button className="relative after:content-['9'] after:absolute after:-top-2 after:-right-3 after:bg-[#1f2538] after:text-[#7a7a7a] after:text-[10px] after:font-semibold after:px-[4px] after:rounded-full">
+              <button className="relative after:content-['9'] after:absolute after:-top-2 after:-right-3 after:bg-[#1f2538] after:text-[#7a7a7a] after:text-[10px] font-epilogue after:font-semibold after:px-[4px] after:rounded-full">
                 Design
               </button>
-              <button className="relative after:content-['4'] after:absolute after:-top-2 after:-right-3 after:bg-[#1f2538] after:text-[#7a7a7a] after:text-[10px] after:font-semibold after:px-[4px] after:rounded-full">
+              <button className="relative after:content-['4'] after:absolute after:-top-2 after:-right-3 after:bg-[#1f2538] after:text-[#7a7a7a] after:text-[10px] font-epilogue after:font-semibold after:px-[4px] after:rounded-full">
                 Branding
               </button>
-              <button className="relative after:content-['3'] after:absolute after:-top-2 after:-right-3 after:bg-[#1f2538] after:text-[#7a7a7a] after:text-[10px] after:font-semibold after:px-[4px] after:rounded-full">
+              <button className="relative after:content-['3'] after:absolute after:-top-2 after:-right-3 after:bg-[#1f2538] after:text-[#7a7a7a] after:text-[10px] font-epilogue after:font-semibold after:px-[4px] after:rounded-full">
                 Illustration
               </button>
-              <button className="relative after:content-['2'] after:absolute after:-top-2 after:-right-3 after:bg-[#1f2538] after:text-[#7a7a7a] after:text-[10px] after:font-semibold after:px-[4px] after:rounded-full">
+              <button className="relative after:content-['2'] after:absolute after:-top-2 after:-right-3 after:bg-[#1f2538] after:text-[#7a7a7a] after:text-[10px] font-epilogue after:font-semibold after:px-[4px] after:rounded-full">
                 Motion
               </button>
             </nav>
@@ -51,10 +51,10 @@ function Lastestworking() {
                   alt="sofa"
                   className="h-full w-full object-cover"
                 />
-                <div className="absolute top-95 left-8 bg-white text-[#1f2538] text-[10px] font-semibold rounded-full px-3 py-1 select-none">
+                <div className="absolute font-epilogue top-95 left-8 bg-white text-[#1f2538] text-[10px] font-semibold rounded-full px-3 py-1 select-none">
                   Design
                 </div>
-                <h3 className="absolute bottom-8 left-8 text-white text-[40px] font-extrabold drop-shadow-lg select-none">
+                <h3 className="absolute font-epilogue bottom-8 left-8 text-white text-[40px] font-extrabold drop-shadow-lg select-none">
                   SOFA
                 </h3>
               </article>
@@ -65,10 +65,10 @@ function Lastestworking() {
                   alt="keyboard"
                   className="h-full w-full object-cover"
                 />
-                <div className="absolute top-95 left-8 bg-white text-[#1f2538] text-[10px] font-semibold rounded-full px-3 py-1 select-none">
+                <div className="absolute top-95 left-8 bg-white text-[#1f2538] text-[10px] font-semibold rounded-full px-3 py-1 select-none font-epilogue">
                   Branding
                 </div>
-                <h3 className="absolute bottom-8 left-8 text-white text-[40px] font-extrabold drop-shadow-lg select-none">
+                <h3 className="absolute bottom-8 left-8 text-white text-[40px] font-epilogue font-extrabold drop-shadow-lg select-none">
                   KeyBoard
                 </h3>
               </article>
@@ -79,10 +79,10 @@ function Lastestworking() {
                   alt="workmedia"
                   className="h-full w-full object-cover"
                 />
-                <div className="absolute top-95 left-8 bg-white text-[#1f2538] text-[10px] font-semibold rounded-full px-3 py-1 select-none">
+                <div className="absolute font-epilogue top-95 left-8 bg-white text-[#1f2538] text-[10px] font-semibold rounded-full px-3 py-1 select-none">
                   Illustration
                 </div>
-                <h3 className="absolute bottom-8 left-8 text-white text-[40px] font-extrabold drop-shadow-lg select-none">
+                <h3 className="absolute font-epilogue bottom-8 left-8 text-white text-[40px] font-extrabold drop-shadow-lg select-none">
                   Work Media
                 </h3>
               </article>
@@ -93,17 +93,17 @@ function Lastestworking() {
                   alt="dddone"
                   className="h-full w-full object-cover"
                 />
-                <div className="absolute top-95 left-8 bg-white text-[#1f2538] text-[10px] font-semibold rounded-full px-3 py-1 select-none">
+                <div className="absolute font-epilogue top-95 left-8 bg-white text-[#1f2538] text-[10px] font-semibold rounded-full px-3 py-1 select-none">
                   Motion
                 </div>
-                <h3 className="absolute bottom-8 left-8 text-white text-[40px] font-extrabold drop-shadow-lg select-none">
+                <h3 className="absolute font-epilogue bottom-8 left-8 text-white text-[40px] font-extrabold drop-shadow-lg select-none">
                   DDDone
                 </h3>
               </article>
             </div>
 
             <div className="flex justify-center mt-12">
-              <button className="text-[10px] font-semibold text-white border border-white px-4 py-2 hover:border-purple-500">
+              <button className="text-[10px] font-epilogue font-semibold text-white border border-white px-4 py-2 hover:border-purple-500">
                 EXPLORE MORE
               </button>
             </div>
@@ -119,13 +119,13 @@ function Lastestworking() {
                 alt="icon"
                 className="h-auto w-auto -mt-[140px]"
               />
-              <p className="text-[16px] text-[#d46a5e] uppercase tracking-widest font-semibold">
+              <p className="text-[16px] font-epilogue text-[#d46a5e] uppercase tracking-widest font-semibold">
                 Get Started
               </p>
-              <h3 className="text-[24px] font-extrabold text-[#1f2538] w-[]">
+              <h3 className="text-[24px] font-epilogue font-extrabold text-[#1f2538] w-[]">
                 We Help Companies Move Faster
               </h3>
-              <button className="bg-[#d46a5e] text-white text-[16px] w-[154px] h-[58px] font-semibold rounded px-4 py-2 hover:bg-[#b85a4d] transition-colors duration-300">
+              <button className="bg-[#d46a5e] font-epilogue text-white text-[16px] w-[154px] h-[58px] font-semibold rounded px-4 py-2 hover:bg-[#b85a4d] transition-colors duration-300">
                 CONTACT US
               </button>
             </div>
@@ -153,10 +153,10 @@ function Lastestworking() {
             aria-label="Team of Designers and Developers"
             className="max-w-5xl mx-auto"
           >
-            <p className="text-[16px] text-[#d46a5e] uppercase tracking-widest mb-2">
+            <p className="text-[16px] font-epilogue text-[#d46a5e] uppercase tracking-widest mb-2">
               Our Team
             </p>
-            <h2 className="text-[56px] font-extrabold mb-8 max-w-xl">
+            <h2 className="text-[56px] font-epilogue font-extrabold mb-8 max-w-xl">
               Team of Designers and Developers
             </h2>
             <div className="flex justify-end space-x-4 mb-8">
@@ -173,10 +173,10 @@ function Lastestworking() {
                   />
                 </div>
                 <div className="text-left">
-                  <p className="font-bold text-white text-[24px] mt-3">
+                  <p className="font-bold font-epilogue text-white text-[24px] mt-3">
                     Azah Anyeni
                   </p>
-                  <p className="text-[16px] text-[#7a7a7a] mt-1">Designer</p>
+                  <p className="text-[16px] text-[#7a7a7a] font-epilogue mt-1">Designer</p>
                 </div>
               </div>
 
@@ -189,10 +189,10 @@ function Lastestworking() {
                   />
                 </div>
                 <div className="mt-3">
-                  <p className="font-bold text-white text-[24px]">
+                  <p className="font-bold font-epilogue text-white text-[24px]">
                     Roelof Bekkenenks
                   </p>
-                  <p className="text-[16px] text-[#7a7a7a] mt-1">
+                  <p className="text-[16px] font-epilogue text-[#7a7a7a] mt-1">
                     React Developer
                   </p>
                 </div>
@@ -207,10 +207,10 @@ function Lastestworking() {
                   />
                 </div>
                 <div className="mt-3">
-                  <p className="font-bold text-white text-[24px]">
+                  <p className="font-bold font-epilogue text-white text-[24px]">
                     Leonardo Oliveira
                   </p>
-                  <p className="text-[16px] text-[#7a7a7a] mt-1">Illustrator</p>
+                  <p className="text-[16px] text-[#7a7a7a] font-epilogue mt-1">Illustrator</p>
                 </div>
               </div>
 
@@ -223,10 +223,10 @@ function Lastestworking() {
                   />
                 </div>
                 <div className="mt-3">
-                  <p className="font-bold text-white text-[24px]">
+                  <p className="font-bold font-epilogue text-white text-[24px]">
                     Izabella Tabakova
                   </p>
-                  <p className="text-[16px] text-[#7a7a7a] mt-1">
+                  <p className="text-[16px] font-epilogue text-[#7a7a7a] mt-1">
                     Product Designer
                   </p>
                 </div>
@@ -243,16 +243,16 @@ function Lastestworking() {
         {/*Mobile */}
         <main className="flex-col block md:hidden max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-30">
           <section aria-label="Portfolio Latest Work" className="mb-40">
-            <p className="text-[16px] text-[#d46a5e] uppercase tracking-widest mb-2 text-center">
+            <p className="text-[16px] font-epilogue text-[#d46a5e] uppercase tracking-widest mb-2 text-center">
               Portfolio
             </p>
-            <h2 className="text-[56px] font-extrabold text-center mb-6">
+            <h2 className="text-[56px] font-epilogue font-extrabold text-center mb-6">
               Latest Work
             </h2>
             <div className="relative flex w-full">
               <select
                 aria-label="Subject"
-                className="appearance-none w-full border border-[#E37B65] rounded-sm px-3 py-2 text-sm text-[#A78B5B] focus:outline-none focus:ring-1 focus:ring-[#E06A4F] bg-white"
+                className="appearance-none w-full border border-[#E37B65] rounded-sm px-3 py-2 text-sm text-[#A78B5B] focus:outline-none focus:ring-1 font-epilogue focus:ring-[#E06A4F] bg-white"
               >
                 <option disabled selected>
                   Select All
@@ -277,10 +277,10 @@ function Lastestworking() {
                   alt="sofa"
                   className="h-full w-full object-cover"
                 />
-                <div className="absolute top-75 left-8 bg-white text-[#1f2538] text-[10px] font-semibold rounded-full px-3 py-1 select-none">
+                <div className="absolute top-75 left-8 bg-white text-[#1f2538] text-[10px] font-semibold rounded-full px-3 py-1 select-none font-epilogue">
                   Design
                 </div>
-                <h3 className="absolute bottom-8 left-8 text-white text-[40px] font-extrabold drop-shadow-lg select-none">
+                <h3 className="absolute bottom-8 left-8 text-white text-[40px] font-extrabold drop-shadow-lg font-epilogue select-none">
                   SOFA
                 </h3>
               </article>
@@ -291,10 +291,10 @@ function Lastestworking() {
                   alt="keyboard"
                   className="h-full w-full object-cover"
                 />
-                <div className="absolute top-75 left-8 bg-white text-[#1f2538] text-[10px] font-semibold rounded-full px-3 py-1 select-none">
+                <div className="absolute top-75 left-8 font-epilogue bg-white text-[#1f2538] text-[10px] font-semibold rounded-full px-3 py-1 select-none">
                   Branding
                 </div>
-                <h3 className="absolute bottom-8 left-8 text-white text-[40px] font-extrabold drop-shadow-lg select-none">
+                <h3 className="absolute bottom-8 left-8 font-epilogue text-white text-[40px] font-extrabold drop-shadow-lg select-none">
                   KeyBoard
                 </h3>
               </article>
@@ -305,17 +305,17 @@ function Lastestworking() {
                   alt="workmedia"
                   className="h-full w-full object-cover"
                 />
-                <div className="absolute top-75 left-8 bg-white text-[#1f2538] text-[10px] font-semibold rounded-full px-3 py-1 select-none">
+                <div className="absolute top-75 left-8 bg-white font-epilogue text-[#1f2538] text-[10px] font-semibold rounded-full px-3 py-1 select-none">
                   Illustration
                 </div>
-                <h3 className="absolute bottom-8 left-8 text-white text-[40px] font-extrabold drop-shadow-lg select-none">
+                <h3 className="absolute bottom-8 left-8 text-white font-epilogue text-[40px] font-extrabold drop-shadow-lg select-none">
                   Work Media
                 </h3>
               </article>
             </div>
 
             <div className="flex justify-center mt-12">
-              <button className="text-[10px] font-semibold text-white border border-white px-4 py-2 hover:border-purple-500">
+              <button className="text-[10px] font-semibold font-epilogue text-white border border-white px-4 py-2 hover:border-purple-500">
                 EXPLORE MORE
               </button>
             </div>
@@ -326,13 +326,13 @@ function Lastestworking() {
             className="bg-[#fff6ef] rounded-lg max-w-7xl mx-auto flex flex-col sm:flex-row items-center h-auto justify-between px-8 py-0 gap-6 mb-30">
             <div className="flex flex-col items-start max-w-sm space-y-3">
               <img src={icon} alt="icon" className="h-auto w-auto -mt-[75px]" />
-              <p className="text-[16px] text-[#d46a5e] uppercase tracking-widest mt-2 font-semibold">
+              <p className="text-[16px] font-epilogue text-[#d46a5e] uppercase tracking-widest mt-2 font-semibold">
                 Get Started
               </p>
-              <h3 className="text-[24px] font-extrabold mt-2 text-[#1f2538]">
+              <h3 className="text-[24px] font-epilogue font-extrabold mt-2 text-[#1f2538]">
                 We Help Companies Move Faster
               </h3>
-              <button className="bg-[#d46a5e] text-white text-[16px] w-[154px] h-[58px] font-semibold rounded px-4 py-2 mt-4 hover:bg-[#b85a4d] transition-colors duration-300">
+              <button className="bg-[#d46a5e] font-epilogue text-white text-[16px] w-[154px] h-[58px] font-semibold rounded px-4 py-2 mt-4 hover:bg-[#b85a4d] transition-colors duration-300">
                 CONTACT US
               </button>
             </div>
@@ -360,10 +360,10 @@ function Lastestworking() {
             aria-label="Team of Designers and Developers"
             className="max-w-5xl mx-auto"
           >
-            <p className="text-[16px] text-[#d46a5e] uppercase tracking-widest mb-2">
+            <p className="text-[16px] text-[#d46a5e] uppercase font-epilogue tracking-widest mb-2">
               Our Team
             </p>
-            <h2 className="text-[40px] font-extrabold mb-8 w-[329px] h-[144px] leading-[48px]">
+            <h2 className="text-[40px] font-extrabold mb-8 w-[329px] font-epilogue h-[144px] leading-[48px]">
               Team of Designers and Developers
             </h2>
 
@@ -377,10 +377,10 @@ function Lastestworking() {
                   />
                 </div>
                 <div className="text-left">
-                  <p className="font-bold text-white text-[24px] mt-3">
+                  <p className="font-bold text-white text-[24px] font-epilogue mt-3">
                     Azah Anyeni
                   </p>
-                  <p className="text-[16px] text-[#7a7a7a] mt-1">Designer</p>
+                  <p className="text-[16px] text-[#7a7a7a] font-epilogue mt-1">Designer</p>
                 </div>
               </div>
 
@@ -393,10 +393,10 @@ function Lastestworking() {
                   />
                 </div>
                 <div className="mt-3">
-                  <p className="font-bold text-white text-[24px]">
+                  <p className="font-bold text-white text-[24px] font-epilogue">
                     Roelof Bekkenenks
                   </p>
-                  <p className="text-[16px] text-[#7a7a7a] mt-1">
+                  <p className="text-[16px] text-[#7a7a7a] mt-1 font-epilogue">
                     React Developer
                   </p>
                 </div>
@@ -411,10 +411,10 @@ function Lastestworking() {
                   />
                 </div>
                 <div className="mt-3">
-                  <p className="font-bold text-white text-[24px]">
+                  <p className="font-bold text-white text-[24px] font-epilogue">
                     Leonardo Oliveira
                   </p>
-                  <p className="text-[16px] text-[#7a7a7a] mt-1">Illustrator</p>
+                  <p className="text-[16px] text-[#7a7a7a] mt-1 font-epilogue">Illustrator</p>
                 </div>
               </div>
 
@@ -427,10 +427,10 @@ function Lastestworking() {
                   />
                 </div>
                 <div className="mt-3">
-                  <p className="font-bold text-white text-[24px]">
+                  <p className="font-bold text-white text-[24px] font-epilogue">
                     Izabella Tabakova
                   </p>
-                  <p className="text-[16px] text-[#7a7a7a] mt-1">
+                  <p className="text-[16px] text-[#7a7a7a] mt-1 font-epilogue">
                     Product Designer
                   </p>
                 </div>

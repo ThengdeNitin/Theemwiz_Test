@@ -32,77 +32,77 @@ function Expsection() {
               <img src={leftpic} alt="leftpic" className="h-full w-auto" />
             </div>
             <div className="max-w-md md:max-w-[566px] mt-18">
-              <p className="text-[16px] font-semibold text-[#E06A56] tracking-widest mb-2 uppercase">
+              <p className="text-[16px] font-semibold text-[#E06A56] tracking-widest font-epilogue mb-2 uppercase">
                 ABOUT
               </p>
-              <h1 className="text-[56px] font-extrabold leading-tight mb-2">
+              <h1 className="text-[56px] font-extrabold leading-tight font-epilogue mb-2">
                 An Experience Design Agency
               </h1>
-              <p className="font-semibold mb-4 text-[20px]">Provides a full service range</p>
-              <p className="text-[16px] text-[#7A6B5A] mb-6 leading-relaxed">
+              <p className="font-semibold mb-4 text-[20px] font-epilogue">Provides a full service range</p>
+              <p className="text-[16px] text-[#7A6B5A] mb-6 leading-relaxed font-epilogue">
                 Ability to put themselves in the merchant's shoes. It is meant
                 to partner on the long run, and work as an extension of the
                 merchant's team.
               </p>
               <button
                 type="button"
-                className="bg-white text-[#3B1F0B] text-xs font-bold px-4 py-2 rounded shadow-sm hover:bg-[#f0e6dc] transition"
+                className="bg-white text-[#3B1F0B] text-xs font-bold px-4 py-2 font-epilogue rounded shadow-sm hover:bg-[#f0e6dc] transition"
               >
                 ABOUT US
               </button>
             </div>
           </section>
           
-          <section className="border border-[#E6D4C3] rounded-md mt-16 mb-25 max-w-7xl mx-auto flex flex-col md:flex-row divide-y md:divide-y-0 md:divide-x divide-[#E6D4C3]">
+          <section className="border border-[#E6D4C3] rounded-md mt-16 mb-25 max-w-7xl mx-auto flex flex-col md:flex-row divide-y md:divide-y-0 md:divide-x divide-[#E6D4C3] font-epilogue">
             <div className="flex-1 p-6 text-center md:text-left">
-              <p className="text-[40px] font-extrabold mb-1">42%</p>
-              <p className="text-[20px]">Years of experience</p>
+              <p className="text-[40px] font-extrabold mb-1 font-epilogue">42%</p>
+              <p className="text-[20px] font-epilogue">Years of experience</p>
             </div>
             <div className="flex-1 p-6 text-center md:text-left">
-              <p className="text-[40px] font-extrabold mb-1">73+</p>
-              <p className="text-[20px]">Agency members</p>
+              <p className="text-[40px] font-extrabold mb-1 font-epilogue">73+</p>
+              <p className="text-[20px] font-epilogue">Agency members</p>
             </div>
             <div className="flex-1 p-6 text-center md:text-left">
-              <p className="text-[40px] font-extrabold mb-1">5000</p>
-              <p className="text-[20px]">Projects complete</p>
+              <p className="text-[40px] font-extrabold mb-1 font-epilogue">5000</p>
+              <p className="text-[20px] font-epilogue">Projects complete</p>
             </div>
           </section>
 
           <section className="max-w-7xl border-b border-[#E6D4C3] mx-auto mt-16 flex flex-col md:flex-row gap-10 md:gap-60">
             <div className="max-w-sm">
-              <p className="text-[16px] font-semibold text-[#E06A56] tracking-widest mb-2 uppercase">
+              <p className="text-[16px] font-semibold text-[#E06A56] tracking-widest mb-2 uppercase font-epilogue">
                 HOW WE WORK
               </p>
-              <h2 className="text-[40px] font-extrabold mb-2 w-[470px]">
+              <h2 className="text-[40px] font-extrabold mb-2 w-[470px] font-epilogue">
                 Making Your Projects Look Awesome
               </h2>
-              <p className="text-[16px] text-[#7A6B5A] mb-4 leading-relaxed w-[470px]">
+              <p className="text-[16px] text-[#7A6B5A] mb-4 leading-relaxed w-[470px] font-epilogue">
                 Technical skills, design, business understanding, ability to put
                 themselves in the merchant's shoes.
               </p>
               <a
                 href="#"
-                className="text-[16px] text-[#3B1F0B] font-normal hover:underline"
+                className="text-[16px] text-[#3B1F0B] font-normal hover:underline font-epilogue" 
               >
                 Read More
               </a>
             </div>
             <div className="flex flex-col justify-center space-y-4 mt-10 mb-15">
-              <div className="flex items-center gap-4">
-                <p className="text-[72px] font-extrabold flex-shrink-0">1</p>
-                <p className="text-[24px] font-extrabold">
+              <div className="flex items-center gap-4 font-epilogue">
+                <p className="text-[72px] font-extrabold flex-shrink-0 font-epilogue">1</p>
+                <p className="text-[24px] font-extrabold font-epilogue">
                   Full service range including
                 </p>
               </div>
               <div className="flex items-center gap-4">
-                <p className="text-[72px] font-extrabold flex-shrink-0">2</p>
-                <p className="text-[24px] font-extrabold">
+                <p className="text-[72px] font-extrabold flex-shrink-0 font-epilogue">2</p>
+                <p className="text-[24px] font-extrabold font-epilogue">
                   Technical skills, design, business
                 </p>
               </div>
               <div className="flex items-center gap-4">
                 <p className="text-[72px] font-extrabold flex-shrink-0">3</p>
-                <p className="text-[24px] font-extrabold">
+                <p className="text-[24px] font-extrabold font-epilogue">
                   Themselves in the merchant's
                 </p>
               </div>
@@ -119,13 +119,13 @@ function Expsection() {
             </div>
 
             <div className="relative !w-[570px] !h-[368px] mt-40">
-              <p className="text-[16px] font-semibold text-[#E06A56] tracking-widest mb-2 uppercase">
+              <p className="text-[16px] font-semibold text-[#E06A56] tracking-widest mb-2 uppercase font-epilogue">
                 VIDEO REEL
               </p>
-              <h2 className="text-[40px] font-extrabold mb-2">
+              <h2 className="text-[40px] font-extrabold mb-2 font-epilogue">
                 Unlock The Greatest Value Possible
               </h2>
-              <p className="text-[16px] text-[#7A6B5A] leading-relaxed">
+              <p className="text-[16px] text-[#7A6B5A] leading-relaxed font-epilogue">
                 Design, business understanding, ability to put themselves in the
                 merchant's shoes meant to partner.
               </p>
@@ -141,21 +141,21 @@ function Expsection() {
               <img src={leftpic} alt="leftpic" className="h-[340px] w-[329px]"/>
             </div>
             <div className="max-w-md md:max-w-[566px] -mt-[20px]">
-              <p className="text-[16px] font-semibold text-[#E06A56] tracking-widest mb-2 uppercase">
+              <p className="text-[16px] font-semibold text-[#E06A56] tracking-widest mb-2 font-epilogue uppercase">
                 ABOUT
               </p>
-              <h1 className="text-[40px] font-extrabold leading-tight mb-2 w-[307px] h-[96px]">
+              <h1 className="text-[40px] font-extrabold leading-tight mb-2 w-[307px] h-[96px] font-epilogue">
                 An Experience Design Agency
               </h1>
-              <p className="font-semibold mb-4 text-[20px]">Provides a full service range</p>
-              <p className="text-[16px] text-[#7A6B5A] mb-6 leading-relaxed">
+              <p className="font-semibold mb-4 text-[20px] font-epilogue">Provides a full service range</p>
+              <p className="text-[16px] text-[#7A6B5A] mb-6 leading-relaxed font-epilogue">
                 Ability to put themselves in the merchant's shoes. It is meant
                 to partner on the long run, and work as an extension of the
                 merchant's team.
               </p>
               <button
                 type="button"
-                className="bg-white text-[#3B1F0B] w-[138px] h-[48px] text-[16px] font-bold px-4 py-2 mt-10 mb-8 rounded shadow-sm hover:bg-[#f0e6dc] transition"
+                className="bg-white text-[#3B1F0B] w-[138px] h-[48px] text-[16px] font-bold px-4 py-2 mt-10 mb-8 rounded shadow-sm hover:bg-[#f0e6dc] transition font-epilogue"
               >
                 ABOUT US
               </button>
@@ -164,54 +164,54 @@ function Expsection() {
           
           <section className="border border-[#E6D4C3] rounded-md mt-16 mb-25 max-w-7xl mx-auto flex flex-col md:flex-row divide-y md:divide-y-0 md:divide-x divide-[#E6D4C3]">
             <div className="flex-1 p-6 text-center md:text-left">
-              <p className="text-[40px] font-extrabold mb-1">42%</p>
-              <p className="text-[20px]">Years of experience</p>
+              <p className="text-[40px] font-extrabold mb-1 font-epilogue">42%</p>
+              <p className="text-[20px] font-epilogue">Years of experience</p>
             </div>
             <div className="flex-1 p-6 text-center md:text-left">
-              <p className="text-[40px] font-extrabold mb-1">73+</p>
-              <p className="text-[20px]">Agency members</p>
+              <p className="text-[40px] font-extrabold mb-1 font-epilogue">73+</p>
+              <p className="text-[20px] font-epilogue">Agency members</p>
             </div>
             <div className="flex-1 p-6 text-center md:text-left">
-              <p className="text-[40px] font-extrabold mb-1">5000</p>
-              <p className="text-[20px]">Projects complete</p>
+              <p className="text-[40px] font-extrabold mb-1 font-epilogue">5000</p>
+              <p className="text-[20px] font-epilogue">Projects complete</p>
             </div>
           </section>
 
           <section className="max-w-7xl border-b border-[#E6D4C3] mx-auto mt-20 flex flex-col md:flex-row gap-10 md:gap-60">
             <div className="max-w-sm">
-              <p className="text-[16px] font-semibold text-[#E06A56] tracking-widest mb-2 uppercase">
+              <p className="text-[16px] font-semibold text-[#E06A56] tracking-widest mb-2 uppercase font-epilogue">
                 HOW WE WORK
               </p>
-              <h2 className="text-[40px] font-extrabold mb-2 w-[329px] leading-[48px]">
+              <h2 className="text-[40px] font-extrabold mb-2 w-[329px] leading-[48px] font-epilogue">
                 Making Your Projects Look Awesome
               </h2>
-              <p className="text-[16px] text-[#7A6B5A] mb-4 leading-relaxed w-[329px] h-[96px]">
+              <p className="text-[16px] text-[#7A6B5A] mb-4 leading-relaxed w-[329px] h-[96px] font-epilogue">
                 Technical skills, design, business understanding, ability to put
                 themselves in the merchant's shoes.
               </p>
               <a
                 href="#"
-                className="text-[16px] text-[#3B1F0B] font-normal hover:underline"
+                className="text-[16px] text-[#3B1F0B] font-normal hover:underline font-epilogue"
               >
                 Read More
               </a>
             </div>
             <div className="flex flex-col justify-center space-y-4 mt-10 mb-15">
               <div className="flex items-center gap-12">
-                <p className="text-[72px] font-extrabold flex-shrink-0">1</p>
-                <p className="text-[24px] font-extrabold w-[257px] h-[64px]">
+                <p className="text-[72px] font-extrabold flex-shrink-0 font-epilogue">1</p>
+                <p className="text-[24px] font-extrabold w-[257px] h-[64px] font-epilogue">
                   Full service range including
                 </p>
               </div>
               <div className="flex items-center gap-10">
-                <p className="text-[72px] font-extrabold flex-shrink-0">2</p>
-                <p className="text-[24px] font-extrabold w-[257px] h-[64px]">
+                <p className="text-[72px] font-extrabold flex-shrink-0 font-epilogue">2</p>
+                <p className="text-[24px] font-extrabold w-[257px] h-[64px] font-epilogue">
                   Technical skills, design, business
                 </p>
               </div>
               <div className="flex items-center gap-10">
-                <p className="text-[72px] font-extrabold flex-shrink-0">3</p>
-                <p className="text-[24px] font-extrabold w-[257px] h-[64px]">
+                <p className="text-[72px] font-extrabold flex-shrink-0 font-epilogue">3</p>
+                <p className="text-[24px] font-extrabold w-[257px] h-[64px] font-epilogue">
                   Themselves in the merchant's
                 </p>
               </div>
@@ -228,13 +228,13 @@ function Expsection() {
             </div>
 
             <div className="relative mt-8">
-              <p className="text-[16px] font-semibold text-[#E06A56] tracking-widest mb-2 uppercase">
+              <p className="text-[16px] font-semibold text-[#E06A56] tracking-widest mb-2 uppercase font-epilogue">
                 VIDEO REEL
               </p>
-              <h2 className="text-[40px] w-[329px] h-[143px] font-extrabold mb-2 leading-[48px]">
+              <h2 className="text-[40px] w-[329px] h-[143px] font-extrabold mb-2 leading-[48px] font-epilogue">
                 Unlock The Greatest Value Possible
               </h2>
-              <p className="text-[16px] text-[#7A6B5A] w-[329px] h-[99px] leading-relaxed">
+              <p className="text-[16px] text-[#7A6B5A] w-[329px] h-[99px] leading-relaxed font-epilogue">
                 Design, business understanding, ability to put themselves in the
                 merchant's shoes meant to partner.
               </p>
