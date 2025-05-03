@@ -31,9 +31,9 @@ function Main() {
             width: "515px",
             height: "32px",
             top: "28px",
-            left: "530px",
+            left: "580px",
           }}>
-            <a className="hover:underlin font-epilogue" href="#">
+            <a className="hover:underline font-epilogue" href="#">
               About
             </a>
             <a className="hover:underline font-epilogue" href="#">

@@ -7,7 +7,7 @@ import minus from "../assets/pricing/minus.png";
 function Pricing() {
   return (
     <>
-      <div className="bg-[#F3D1BF]">
+      <div className="bg-[#FAEBD7]">
         {/*Desktop View*/}
         <main className="hidden md:block max-w-7xl mx-auto px-6 py-16 md:py-24">
           <section className="max-w-7xl mx-auto mb-20 md:mb-28">
@@ -25,7 +25,7 @@ function Pricing() {
               className="flex flex-col md:flex-row max-w-7xl mx-auto"
               role="list"
             >
-              <article className="flex-1 bg-[#F3D1BF] border border-[#E37B65] rounded-md p-6 md:p-7">
+              <article className="flex-1 bg-[#FAEBD7] border border-[#E37B65] rounded-md p-6 md:p-7">
                 <p className="text-[16px] font-semibold tracking-widest font-epilogue text-[#E37B65] uppercase mb-4">
                   Consultation
                 </p>
@@ -123,7 +123,7 @@ function Pricing() {
                 </button>
               </article>
 
-              <article className="flex-1 bg-[#F3D1BF] border border-[#E37B65] rounded-md p-6 md:p-7">
+              <article className="flex-1 bg-[#FAEBD7] border border-[#E37B65] rounded-md p-6 md:p-7">
                 <p className="text-[16px] font-epilogue font-semibold tracking-widest text-[#E37B65] uppercase mb-4">
                   Design · Code
                 </p>
@@ -220,7 +220,7 @@ function Pricing() {
                 </div>
 
                 <div
-                  className="p-8 cursor-pointer flex justify-between items-center !bg-[#F3D1BF] border-[#E37B65]"
+                  className="p-8 cursor-pointer flex justify-between items-center !bg-[#FAEBD7] border-[#E37B65]"
                   role="listitem"
                 >
                   <h3 className="font-extrabold font-epilogue text-[#3B1F0B] text-[24px] leading-tight max-w-[85%]">
@@ -237,7 +237,7 @@ function Pricing() {
                 </div>
 
                 <div
-                  className="p-8 cursor-pointer flex justify-between items-center !bg-[#F3D1BF] border-[#E37B65]"
+                  className="p-8 cursor-pointer flex justify-between items-center !bg-[#FAEBD7] border-[#E37B65]"
                   role="listitem"
                 >
                   <h3 className="font-extrabold font-epilogue text-[#3B1F0B] text-[24px] leading-tight max-w-[85%]">
@@ -254,7 +254,7 @@ function Pricing() {
                 </div>
 
                 <div
-                  className="p-8 cursor-pointer flex justify-between items-center rounded-b-md !bg-[#F3D1BF] border-[#E37B65]"
+                  className="p-8 cursor-pointer flex justify-between items-center rounded-b-md !bg-[#FAEBD7] border-[#E37B65]"
                   role="listitem"
                 >
                   <h3 className="font-extrabold font-epilogue text-[#3B1F0B] text-[24px] leading-tight max-w-[85%]">
@@ -287,7 +287,7 @@ function Pricing() {
             </div>
 
             <div className="flex flex-col md:flex-row max-w-7xl mx-auto" role="list">
-              <article className="w-[329px] h-[493px] flex flex-col justify-between bg-[#F3D1BF] border border-[#E37B65] rounded-md p-6 md:p-7">
+              <article className="w-[329px] h-[493px] flex flex-col justify-between bg-[#FAEBD7] border border-[#E37B65] rounded-md p-6 md:p-7">
                 <div className="mt-6">
                   <p className="text-[16px] font-epilogue font-semibold tracking-widest text-[#E37B65] w-[142px] h-[32px] mb-2">
                     CONSULTATION
@@ -386,7 +386,7 @@ function Pricing() {
                 </button>
               </article>
 
-              <article className="w-[329px] h-[493px] flex flex-col justify-between bg-[#F3D1BF] border border-[#E37B65] rounded-md p-6 md:p-7">
+              <article className="w-[329px] h-[493px] flex flex-col justify-between bg-[#FAEBD7] border border-[#E37B65] rounded-md p-6 md:p-7">
                 <div className="mt-6">
                   <p className="text-[16px] font-epilogue font-semibold tracking-widest text-[#E37B65] uppercase mb-4">
                     Design · Code
@@ -477,7 +477,7 @@ function Pricing() {
                 </div>
 
                 <div
-                  className="p-8 cursor-pointer flex justify-between items-center !bg-[#F3D1BF] border-[#E37B65]"
+                  className="p-8 cursor-pointer flex justify-between items-center !bg-[#FAEBD7] border-[#E37B65]"
                   role="listitem"
                 >
                   <h3 className="font-extrabold font-epilogue text-[#3B1F0B] text-[24px] leading-tight max-w-[85%]">
@@ -494,7 +494,7 @@ function Pricing() {
                 </div>
 
                 <div
-                  className="p-8 cursor-pointer flex justify-between items-center !bg-[#F3D1BF] border-[#E37B65]"
+                  className="p-8 cursor-pointer flex justify-between items-center !bg-[#FAEBD7] border-[#E37B65]"
                   role="listitem"
                 >
                   <h3 className="font-extrabold font-epilogue text-[#3B1F0B] text-[24px] leading-tight max-w-[85%]">
@@ -511,7 +511,7 @@ function Pricing() {
                 </div>
 
                 <div
-                  className="p-8 cursor-pointer flex justify-between items-center rounded-b-md !bg-[#F3D1BF] border-[#E37B65]"
+                  className="p-8 cursor-pointer flex justify-between items-center rounded-b-md !bg-[#FAEBD7] border-[#E37B65]"
                   role="listitem"
                 >
                   <h3 className="font-extrabold font-epilogue text-[#3B1F0B] text-[24px] leading-tight max-w-[85%]">
