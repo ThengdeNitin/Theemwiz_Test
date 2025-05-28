@@ -59,7 +59,7 @@ function Footer() {
 
   return (
     <>
-      <div className="bg-[#FAEBD7] text-[#3B1F0B]">
+      <div className="bg-[#FDF0E9] text-[#3B1F0B]">
         {/*Desktop View*/}
         <section className="hidden md:block relative w-full h-[480px] sm:h-[520px] md:h-[600px] lg:h-[640px] xl:h-[720px]">
           <img src={map} alt="map" className="h-full w-full" />
@@ -75,7 +75,7 @@ function Footer() {
                   placeholder="Your email"
                   value={form.email}
                   onChange={handleChange}
-                  className="w-full border border-[#E37B65] rounded-sm px-3 py-2 text-sm placeholder-[#A78B5B] focus:outline-none focus:ring-1 focus:ring-[#E06A4F]"
+                  className="w-full border border-[#EF6D58] rounded-sm px-3 py-2 text-sm placeholder-[#A78B5B] focus:outline-none focus:ring-1 focus:ring-[#E06A4F]"
                 />
                 {errors.email && (
                   <p className="text-red-500 text-xs mt-1">{errors.email}</p>
@@ -87,7 +87,7 @@ function Footer() {
                   name="subject"
                   value={form.subject}
                   onChange={handleChange}
-                  className="appearance-none w-full border border-[#E37B65] rounded-sm px-3 py-2 text-sm text-[#A78B5B] focus:outline-none focus:ring-1 focus:ring-[#E06A4F] font-epilogue"
+                  className="appearance-none w-full border border-[#EF6D58] rounded-sm px-3 py-2 text-sm text-[#A78B5B] focus:outline-none focus:ring-1 focus:ring-[#E06A4F] font-epilogue"
                 >
                   <option value="" disabled>
                     Subject
@@ -113,7 +113,7 @@ function Footer() {
                   onChange={handleChange}
                   placeholder="Message"
                   rows="3"
-                  className="w-full border border-[#E37B65] rounded-sm px-3 py-2 text-sm placeholder-[#A78B5B] resize-none focus:outline-none focus:ring-1 focus:ring-[#E06A4F]"
+                  className="w-full border border-[#EF6D58] rounded-sm px-3 py-2 text-sm placeholder-[#A78B5B] resize-none focus:outline-none focus:ring-1 focus:ring-[#E06A4F]"
                 />
                 {errors.message && (
                   <p className="text-red-500 text-xs mt-1">{errors.message}</p>
@@ -230,14 +230,14 @@ function Footer() {
             </h2>
             <form className="space-y-6">
               <input
-                className="w-full border border-[#E37B65] rounded-sm px-3 py-2 text-sm placeholder-[#A78B5B] focus:outline-none focus:ring-1 focus:ring-[#E06A4F]"
+                className="w-full border border-[#EF6D58] rounded-sm px-3 py-2 text-sm placeholder-[#A78B5B] focus:outline-none focus:ring-1 focus:ring-[#E06A4F]"
                 placeholder="Your email"
                 type="email"
               />
               <div className="relative w-full">
                 <select
                   aria-label="Subject"
-                  className="appearance-none w-full border border-[#E37B65] rounded-sm px-3 py-2 text-sm text-[#A78B5B] focus:outline-none focus:ring-1 font-epilogue focus:ring-[#E06A4F]"
+                  className="appearance-none w-full border border-[#EF6D58] rounded-sm px-3 py-2 text-sm text-[#A78B5B] focus:outline-none focus:ring-1 font-epilogue focus:ring-[#E06A4F]"
                 >
                   <option disabled selected>
                     Subject
@@ -255,7 +255,7 @@ function Footer() {
               </div>
 
               <textarea
-                className="w-full border border-[#E37B65] rounded-sm px-3 py-2 text-sm placeholder-[#A78B5B] resize-none focus:outline-none focus:ring-1 focus:ring-[#E06A4F]"
+                className="w-full border border-[#EF6D58] rounded-sm px-3 py-2 text-sm placeholder-[#A78B5B] resize-none focus:outline-none focus:ring-1 focus:ring-[#E06A4F]"
                 placeholder="Message"
                 rows="3"
               ></textarea>

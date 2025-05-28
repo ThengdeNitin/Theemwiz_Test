@@ -8,7 +8,7 @@ import play from "../assets/experiance/play.png";
 function Expsection() {
   return (
     <>
-      <div className="bg-[#FAF0E6] text-[#3B1F0B] min-h-screen flex flex-col">
+      <div className="bg-[#FDF0E9] text-[#3B1F0B] min-h-screen flex flex-col">
         <header className="hidden md:flex border-b border-[#E6D4C3] py-16 px-4 justify-center max-w-7xl mx-auto w-full">
           {/*Desktop View*/}
           <nav className="hidden md:flex justify-between items-center w-full max-w-5xl">
@@ -30,7 +30,7 @@ function Expsection() {
               <img src={leftpic} alt="leftpic" className="h-full w-auto" />
             </div>
             <div className="max-w-md md:max-w-[566px] mt-18">
-              <p className="text-[16px] font-semibold text-[#E06A56] tracking-widest font-epilogue mb-2 uppercase">
+              <p className="text-[16px] font-semibold text-[#EF6D58] tracking-widest font-epilogue mb-2 uppercase">
                 <h4>ABOUT</h4>
               </p>
               <h1 className="text-[56px] font-extrabold leading-tight font-epilogue mb-2">
@@ -76,7 +76,7 @@ function Expsection() {
 
           <section className="max-w-7xl border-b border-[#E6D4C3] mx-auto mt-16 flex flex-col md:flex-row gap-10 md:gap-60">
             <div className="max-w-sm">
-              <p className="text-[16px] font-semibold text-[#E06A56] tracking-widest mb-2 uppercase font-epilogue">
+              <p className="text-[16px] font-semibold text-[#EF6D58] tracking-widest mb-2 uppercase font-epilogue">
                 <h4>HOW WE WORK</h4>
               </p>
               <h2 className="text-[40px] font-extrabold mb-2 w-[470px] font-epilogue">
@@ -136,7 +136,7 @@ function Expsection() {
             </div>
 
             <div className="relative !w-[570px] !h-[368px] mt-40">
-              <p className="text-[16px] font-semibold text-[#E06A56] tracking-widest mb-2 uppercase font-epilogue">
+              <p className="text-[16px] font-semibold text-[#EF6D58] tracking-widest mb-2 uppercase font-epilogue">
                 <h4>VIDEO REEL</h4>
               </p>
               <h1 className="text-[40px] font-extrabold mb-2 font-epilogue">
@@ -175,12 +175,13 @@ function Expsection() {
                 to partner on the long run, and work as an extension of the
                 merchant's team.
               </p>
-              <button
+              <a href="/"><button
                 type="button"
                 className="bg-white text-[#3B1F0B] w-[138px] h-[48px] text-[16px] font-bold px-4 py-2 mt-10 mb-8 rounded shadow-sm hover:bg-[#f0e6dc] transition font-epilogue"
               >
                 ABOUT US
               </button>
+              </a>
             </div>
           </section>
 

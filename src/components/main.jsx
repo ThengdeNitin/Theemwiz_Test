@@ -11,7 +11,7 @@ function Main() {
 
   return (
     <>
-      <div className="!bg-[#1f2437] min-h-screen w-full">
+      <div className="!bg-[#28293E] min-h-screen w-full">
         <header className="flex items-center justify-between px-4 md:px-12 py-1">
           {/* Desktop View */}
           <div
@@ -95,7 +95,7 @@ function Main() {
             backgroundPosition: "calc(50% - 230px) 130px",
           }}>
           <section className="w-1/2 pr-2">
-            <p className="text-[#f36e4d] text-xs md:text-[16px] font-semibold tracking-widest mb-2 font-epilogue">
+            <p className="text-[#EF6D58] text-xs md:text-[16px] font-semibold tracking-widest mb-2 font-epilogue">
               <h4>MODERN STUDIO</h4>
             </p>
             <h1 className="text-white font-extrabold text-[40px] md:text-[72px] leading-tight mb-4 font-epilogue"
@@ -111,12 +111,12 @@ function Main() {
               design, business understanding.
             </p>
             <div className="flex items-center space-x-6">
-            <a href="/"><button className="w-[154px] h-[48px] bg-[#f36e4d] text-white font-bold text-xs rounded tracking-widest hover:bg-[#e05a3a] transition font-epilogue">
+            <a href="/"><button className="w-[154px] h-[48px] bg-[#EF6D58] text-white font-bold text-xs rounded tracking-widest hover:bg-[#e05a3a] transition font-epilogue">
               <h1>HOW WE WORK</h1>
               </button>
               </a>
               <a
-                className="text-white md:text-[16px] text-sm hover:underline font-epilogue"
+                className="text-white md:text-[16px] text-sm font-epilogue"
                 href="/"
               >
                 <h1>Contact Us</h1>
@@ -172,9 +172,10 @@ function Main() {
               design, business understanding.
             </p>
             <div className="flex items-center space-x-6">
-              <button className="w-[154px] h-[48px] bg-[#f36e4d] text-white font-bold text-xs rounded tracking-widest hover:bg-[#e05a3a] transition font-epilogue">
+            <a href="/"><button className="w-[154px] h-[48px] bg-[#f36e4d] text-white font-bold text-xs rounded tracking-widest hover:bg-[#e05a3a] transition font-epilogue">
                 HOW WE WORK
               </button>
+              </a>
               <a
                 className="text-white md:text-[16px] text-sm hover:underline font-epilogue"
                 href="/"

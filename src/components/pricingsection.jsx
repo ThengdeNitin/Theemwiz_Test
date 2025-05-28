@@ -29,12 +29,12 @@ function Pricing() {
 
   return (
     <>
-      <div className="bg-[#FAEBD7]">
+      <div className="bg-[#FDF0E9]">
         {/*Desktop View*/}
         <main className="hidden md:block max-w-7xl mx-auto px-6 py-16 md:py-24">
           <section className="max-w-7xl mx-auto mb-20 md:mb-28">
             <div className="max-w-md md:max-w-lg mb-26">
-              <h4 className="text-[16px] font-semibold tracking-widest text-[#E37B65] uppercase font-epilogue mb-2">
+              <h4 className="text-[16px] font-semibold tracking-widest text-[#EF6D58] uppercase font-epilogue mb-2">
                 Pricing
               </h4>
               <h1 className="text-[56px] font-extrabold text-black leading-tight font-epilogue">
@@ -47,8 +47,8 @@ function Pricing() {
               className="flex flex-col md:flex-row max-w-7xl mx-auto"
               role="list"
             >
-              <article className="flex-1 bg-[#FAEBD7] border border-[#E37B65] rounded-md p-6 md:p-7">
-                <h4 className="text-[16px] font-semibold tracking-widest font-epilogue text-[#E37B65] uppercase mb-4">
+              <article className="flex-1 bg-[#FAEBD7] border border-[#EF6D58] rounded-md p-6 md:p-7">
+                <h4 className="text-[16px] font-semibold tracking-widest font-epilogue text-[#EF6D58] uppercase mb-4">
                   Consultation
                 </h4>
                 <h1 className="font-extrabold text-black text-[40px] font-epilogue mb-2">
@@ -60,7 +60,7 @@ function Pricing() {
                 <ul className="space-y-3 mb-8 text-sm text-[#6B5B4B]">
                   <li className="flex font-epilogue items-center gap-2">
                     <span
-                      className="flex items-center justify-center w-5 h-5 rounded-full bg-[#E37B65] text-white text-[16px]"
+                      className="flex items-center justify-center w-5 h-5 rounded-full bg-[#EF6D58] text-white text-[16px]"
                       aria-hidden="true"
                     >
                       <img src={plus} alt="plus" className="h-full w-full" />
@@ -86,19 +86,20 @@ function Pricing() {
                     Production
                   </li>
                 </ul>
-                <button
+                <a href="/"><button
                   type="button"
                   className="font-extrabold text-[16px] w-[158px] h-[48px] uppercase bg-white text-[#3B1F0B] px-5 py-2 rounded shadow-[0_2px_6px_rgba(0,0,0,0.1)] font-epilogue hover:shadow-[0_4px_12px_rgba(0,0,0,0.15)] transition-shadow"
                 >
                   Contact Us
                 </button>
+                </a>
               </article>
 
-              <article className="flex-1 bg-white rounded-md p-4 md:p-7 relative border border-[#E37B65] shadow-md -mt-12 z-10">
-                <span className="absolute top-4 left-4 w-[92px] h-[38px] bg-[#E37B65] border-[#E37B65] text-white text-[16px] font-semibold rounded-full font-epilogue px-4 py-2">
+              <article className="flex-1 bg-white rounded-md p-4 md:p-7 relative border border-[#EF6D58] shadow-md -mt-12 z-10">
+                <span className="absolute top-4 left-4 w-[92px] h-[38px] bg-[#EF6D58] border-[#EF6D58] text-white text-[16px] font-semibold rounded-full font-epilogue px-4 py-2">
                   Popular
                 </span>
-                <h4 className="text-[16px] font-epilogue font-semibold tracking-widest text-[#E37B65] uppercase mb-4 mt-10">
+                <h4 className="text-[16px] font-epilogue font-semibold tracking-widest text-[#EF6D58] uppercase mb-4 mt-10">
                   Design
                 </h4>
                 <h3 className="font-extrabold font-epilogue text-black text-[40px] mb-2">
@@ -111,7 +112,7 @@ function Pricing() {
                 <ul className="space-y-3 mb-8 text-[16px] text-[#6B5B4B]">
                   <li className="flex font-epilogue items-center gap-2">
                     <span
-                      className="flex items-center justify-center w-5 h-5 rounded-full bg-[#E37B65] text-white text-xs"
+                      className="flex items-center justify-center w-5 h-5 rounded-full bg-[#EF6D58] text-white text-xs"
                       aria-hidden="true"
                     >
                       <img src={plus} alt="plus" className="h-full w-full" />
@@ -120,7 +121,7 @@ function Pricing() {
                   </li>
                   <li className="flex font-epilogue items-center gap-2">
                     <span
-                      className="flex items-center justify-center w-5 h-5 rounded-full bg-[#E37B65] text-white text-xs"
+                      className="flex items-center justify-center w-5 h-5 rounded-full bg-[#EF6D58] text-white text-xs"
                       aria-hidden="true"
                     >
                       <img src={plus} alt="minus" className="h-full w-full" />
@@ -137,16 +138,16 @@ function Pricing() {
                     Production
                   </li>
                 </ul>
-                <button
+                <a href="/"><button
                   type="button"
-                  className="font-extrabold text-[16px] w-[158px] h-[48px] uppercase bg-[#E37B65] text-white px-5 py-2 rounded shadow-[0_2px_6px_rgba(0,0,0,0.1)] font-epilogue hover:shadow-[0_4px_12px_rgba(0,0,0,0.15)] transition-shadow"
+                  className="font-extrabold text-[16px] w-[158px] h-[48px] uppercase bg-[#EF6D58] text-white px-5 py-2 rounded shadow-[0_2px_6px_rgba(0,0,0,0.1)] font-epilogue hover:shadow-[0_4px_12px_rgba(0,0,0,0.15)] transition-shadow"
                 >
                   Contact Us
-                </button>
+                </button></a>
               </article>
 
-              <article className="flex-1 bg-[#FAEBD7] border border-[#E37B65] rounded-md p-6 md:p-7">
-                <h4 className="text-[16px] font-epilogue font-semibold tracking-widest text-[#E37B65] uppercase mb-4">
+              <article className="flex-1 bg-[#FAEBD7] border border-[#EF6D58] rounded-md p-6 md:p-7">
+                <h4 className="text-[16px] font-epilogue font-semibold tracking-widest text-[#EF6D58] uppercase mb-4">
                   Design · Code
                 </h4>
                 <h3 className="font-extrabold font-epilogue text-black text-[40px] mb-2">
@@ -158,7 +159,7 @@ function Pricing() {
                 <ul className="space-y-3 mb-8 text-[16px] text-[#6B5B4B]">
                   <li className="flex  font-epilogue items-center gap-2">
                     <span
-                      className="flex items-center justify-center w-5 h-5 rounded-full bg-[#E37B65] text-white text-xs"
+                      className="flex items-center justify-center w-5 h-5 rounded-full bg-[#EF6D58] text-white text-xs"
                       aria-hidden="true"
                     >
                       <img src={plus} alt="plus" className="h-full w-full" />
@@ -167,7 +168,7 @@ function Pricing() {
                   </li>
                   <li className="flex font-epilogue items-center gap-2">
                     <span
-                      className="flex items-center justify-center w-5 h-5 rounded-full bg-[#E37B65] text-white text-xs"
+                      className="flex items-center justify-center w-5 h-5 rounded-full bg-[#EF6D58] text-white text-xs"
                       aria-hidden="true"
                     >
                       <img src={plus} alt="minus" className="h-full w-full" />
@@ -176,7 +177,7 @@ function Pricing() {
                   </li>
                   <li className="flex font-epilogue items-center gap-2">
                     <span
-                      className="flex items-center justify-center w-5 h-5 rounded-full bg-[#E37B65] text-white text-xs"
+                      className="flex items-center justify-center w-5 h-5 rounded-full bg-[#EF6D58] text-white text-xs"
                       aria-hidden="true"
                     >
                       <img src={plus} alt="minus" className="h-full w-full" />
@@ -184,19 +185,20 @@ function Pricing() {
                     Production
                   </li>
                 </ul>
-                <button
+                <a href="/"><button
                   type="button"
                   className="font-extrabold text-[16px] w-[158px] h-[48px] uppercase bg-white text-[#3B1F0B] px-5 py-2 rounded shadow-[0_2px_6px_rgba(0,0,0,0.1)] font-epilogue hover:shadow-[0_4px_12px_rgba(0,0,0,0.15)] transition-shadow"
                 >
                   Contact Us
                 </button>
+                </a>
               </article>
             </div>
           </section>
 
           <section className="max-w-7xl mx-auto mb-6 flex flex-col md:flex-row gap-12 md:gap-70">
             <div className="max-w-md md:max-w-s">
-              <h4 className="text-[16px] font-epilogue font-semibold tracking-widest text-[#E37B65] uppercase mb-2">
+              <h4 className="text-[16px] font-epilogue font-semibold tracking-widest text-[#EF6D58] uppercase mb-2">
                 FAQ
               </h4>
               <h1 className="text-[40px] font-epilogue text-[#391400] font-extrabold leading-tight mb-4">
@@ -213,7 +215,7 @@ function Pricing() {
 
             <div className="max-w-md md:max-w-xl">
               <div
-                className="bg-white rounded-md shadow-md divide-y divide-[#F0D9CC] border border-[#E37B65]"
+                className="bg-white rounded-md shadow-md divide-y divide-[#F0D9CC] border border-[#EF6D58]"
                 role="list"
               >
                 {faqs.map((faq, index) => (
@@ -232,7 +234,7 @@ function Pricing() {
                         }
                         aria-expanded={openIndex === index}
                         aria-controls={`faq${index}`}
-                        className="text-[#E37B65] text-lg h-[32px] w-[32px]"
+                        className="text-[#EF6D58] text-lg h-[32px] w-[32px]"
                         aria-label={`${
                           openIndex === index ? "Collapse" : "Expand"
                         } ${faq.question}`}
@@ -263,7 +265,7 @@ function Pricing() {
         <main className="block md:hidden max-w-7xl mx-auto px-6 py-16 md:py-24">
           <section className="max-w-7xl mx-auto mb-20 md:mb-28">
             <div className="max-w-md md:max-w-lg mb-10">
-              <p className="text-[16px] font-epilogue font-semibold tracking-widest text-[#E37B65] uppercase mb-2">
+              <p className="text-[16px] font-epilogue font-semibold tracking-widest text-[#EF6D58] uppercase mb-2">
                 Pricing
               </p>
               <h2 className="text-[40px] font-epilogue font-extrabold text-black leading-[48px] w-[265px] h-[96px]">
@@ -275,9 +277,9 @@ function Pricing() {
               className="flex flex-col md:flex-row max-w-7xl mx-auto"
               role="list"
             >
-              <article className="w-[329px] h-[493px] flex flex-col justify-between bg-[#FAEBD7] border border-[#E37B65] rounded-md p-6 md:p-7">
+              <article className="w-[329px] h-[493px] flex flex-col justify-between bg-[#FAEBD7] border border-[#EF6D58] rounded-md p-6 md:p-7">
                 <div className="mt-6">
-                  <p className="text-[16px] font-epilogue font-semibold tracking-widest text-[#E37B65] w-[142px] h-[32px] mb-2">
+                  <p className="text-[16px] font-epilogue font-semibold tracking-widest text-[#EF6D58] w-[142px] h-[32px] mb-2">
                     CONSULTATION
                   </p>
                   <h3 className="font-extrabold font-epilogue text-black text-[40px] w-[93px] h-[48px] mb-6">
@@ -289,7 +291,7 @@ function Pricing() {
                   </p>
                   <ul className="space-y-3 text-sm text-[#6B5B4B]">
                     <li className="flex items-center gap-2">
-                      <span className="flex items-center justify-center w-5 h-5 rounded-full bg-[#E37B65] text-white">
+                      <span className="flex items-center justify-center w-5 h-5 rounded-full bg-[#EF6D58] text-white">
                         <img src={plus} alt="plus" className="h-full w-full" />
                       </span>
                       <span className="w-[103px] font-epilogue h-[32px]">
@@ -331,12 +333,12 @@ function Pricing() {
                 </a>
               </article>
 
-              <article className="w-[329px] h-[493px] flex flex-col justify-between bg-white border border-[#E37B65] shadow-md rounded-md p-6 md:p-7 relative">
-                <span className="absolute top-10 left-4 w-[92px] h-[38px] bg-[#E37B65] text-white text-[16px] font-semibold rounded-full flex items-center justify-center font-epilogue">
+              <article className="w-[329px] h-[493px] flex flex-col justify-between bg-white border border-[#EF6D58] shadow-md rounded-md p-6 md:p-7 relative">
+                <span className="absolute top-10 left-4 w-[92px] h-[38px] bg-[#EF6D58] text-white text-[16px] font-semibold rounded-full flex items-center justify-center font-epilogue">
                   Popular
                 </span>
                 <div className="mt-18">
-                  <p className="text-[16px] font-epilogue font-semibold tracking-widest text-[#E37B65] uppercase mb-4">
+                  <p className="text-[16px] font-epilogue font-semibold tracking-widest text-[#EF6D58] uppercase mb-4">
                     Design
                   </p>
                   <h3 className="font-extrabold font-epilogue text-black text-[40px] mb-2">
@@ -348,13 +350,13 @@ function Pricing() {
                   </p>
                   <ul className="space-y-3 text-[16px] text-[#6B5B4B]">
                     <li className="flex items-center font-epilogue gap-2">
-                      <span className="flex items-center justify-center w-5 h-5 rounded-full bg-[#E37B65] text-white">
+                      <span className="flex items-center justify-center w-5 h-5 rounded-full bg-[#EF6D58] text-white">
                         <img src={plus} alt="plus" className="h-full w-full" />
                       </span>
                       Brand Design
                     </li>
                     <li className="flex items-center font-epilogue gap-2">
-                      <span className="flex items-center justify-center w-5 h-5 rounded-full bg-[#E37B65] text-white">
+                      <span className="flex items-center justify-center w-5 h-5 rounded-full bg-[#EF6D58] text-white">
                         <img src={plus} alt="plus" className="h-full w-full" />
                       </span>
                       Market Analysis
@@ -373,15 +375,15 @@ function Pricing() {
                 </div>
                 <a href="/"><button
                   type="button"
-                  className="mt-6 mb-4 font-extrabold text-[16px] w-[158px] h-[48px] uppercase bg-[#E37B65] text-white px-5 py-2 rounded shadow hover:shadow-lg font-epilogue transition-shadow"
+                  className="mt-6 mb-4 font-extrabold text-[16px] w-[158px] h-[48px] uppercase bg-[#EF6D58] text-white px-5 py-2 rounded shadow hover:shadow-lg font-epilogue transition-shadow"
                 >
                   Contact Us
                 </button></a>
               </article>
 
-              <article className="w-[329px] h-[493px] flex flex-col justify-between bg-[#FAEBD7] border border-[#E37B65] rounded-md p-6 md:p-7">
+              <article className="w-[329px] h-[493px] flex flex-col justify-between bg-[#FAEBD7] border border-[#EF6D58] rounded-md p-6 md:p-7">
                 <div className="mt-6">
-                  <p className="text-[16px] font-epilogue font-semibold tracking-widest text-[#E37B65] uppercase mb-4">
+                  <p className="text-[16px] font-epilogue font-semibold tracking-widest text-[#EF6D58] uppercase mb-4">
                     Design · Code
                   </p>
                   <h3 className="font-extrabold font-epilogue text-black text-[40px] mb-2">
@@ -392,19 +394,19 @@ function Pricing() {
                   </p>
                   <ul className="space-y-3 text-[16px] text-[#6B5B4B]">
                     <li className="flex font-epilogue items-center gap-2">
-                      <span className="flex items-center justify-center w-5 h-5 rounded-full bg-[#E37B65] text-white">
+                      <span className="flex items-center justify-center w-5 h-5 rounded-full bg-[#EF6D58] text-white">
                         <img src={plus} alt="plus" className="h-full w-full" />
                       </span>
                       Brand Design
                     </li>
                     <li className="flex font-epilogue items-center gap-2">
-                      <span className="flex items-center justify-center w-5 h-5 rounded-full bg-[#E37B65] text-white">
+                      <span className="flex items-center justify-center w-5 h-5 rounded-full bg-[#EF6D58] text-white">
                         <img src={plus} alt="plus" className="h-full w-full" />
                       </span>
                       Market Analysis
                     </li>
                     <li className="flex font-epilogue items-center gap-2">
-                      <span className="flex items-center justify-center w-5 h-5 rounded-full bg-[#E37B65] text-white">
+                      <span className="flex items-center justify-center w-5 h-5 rounded-full bg-[#EF6D58] text-white">
                         <img src={plus} alt="plus" className="h-full w-full" />
                       </span>
                       Production
@@ -425,7 +427,7 @@ function Pricing() {
 
           <section className="max-w-7xl mx-auto mb-6 flex flex-col md:flex-row gap-12 md:gap-70">
             <div className="max-w-md md:max-w-s">
-              <p className="text-[16px] font-epilogue font-semibold tracking-widest text-[#E37B65] uppercase mb-2">
+              <p className="text-[16px] font-epilogue font-semibold tracking-widest text-[#EF6D58] uppercase mb-2">
                 FAQ
               </p>
               <h2 className="text-[40px] font-epilogue w-[329px] h-[144px] text-[#391400] font-extrabold leading-[48px] mb-4">

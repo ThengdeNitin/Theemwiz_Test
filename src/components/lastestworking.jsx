@@ -113,10 +113,10 @@ function Lastestworking() {
 
   return (
     <>
-      <div className="bg-[#1f2538] text-white">
+      <div className="bg-[#28293E] text-white">
         <main className="hidden md:block max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-30">
           <section aria-label="Portfolio Latest Work" className="mb-20">
-            <h4 className="text-[16px] font-epilogue text-[#d46a5e] uppercase tracking-widest mb-2 text-center">
+            <h4 className="text-[16px] font-epilogue text-[#EF6D58] uppercase tracking-widest mb-2 text-center">
               Portfolio
             </h4>
             <h1 className="text-[56px] font-epilogue font-extrabold text-center mb-6">
@@ -207,7 +207,7 @@ function Lastestworking() {
 
           <section
             aria-label="Get Started Help Companies Move Faster"
-            className="bg-[#fff6ef] rounded-lg max-w-7xl mx-auto flex flex-col sm:flex-row items-center h-[316px] justify-between px-15 py-0 gap-6 mb-20"
+            className="bg-[#FDF0E9] rounded-lg max-w-7xl mx-auto flex flex-col sm:flex-row items-center h-[316px] justify-between px-15 py-0 gap-6 mb-20"
           >
             <div className="flex flex-col items-start max-w-sm space-y-3">
               <img
@@ -215,13 +215,13 @@ function Lastestworking() {
                 alt="icon"
                 className="h-auto w-auto -mt-[140px]"
               />
-              <h1 className="text-[16px] font-epilogue text-[#d46a5e] uppercase tracking-widest font-semibold">
+              <h1 className="text-[16px] font-epilogue text-[#EF6D58] uppercase tracking-widest font-semibold">
                 Get Started
               </h1>
               <h2 className="text-[24px] font-epilogue font-extrabold text-[#1f2538] w-[]">
                 We Help Companies Move Faster
               </h2>
-              <a href="/"><button className="bg-[#d46a5e] font-epilogue text-white text-[16px] w-[154px] h-[58px] font-semibold rounded px-4 py-2 hover:bg-[#b85a4d] transition-colors duration-300">
+              <a href="/"><button className="bg-[#EF6D58] font-epilogue text-white text-[16px] w-[154px] h-[58px] font-semibold rounded px-4 py-2 hover:bg-[#b85a4d] transition-colors duration-300">
                 CONTACT US
               </button></a>
             </div>
@@ -249,7 +249,7 @@ function Lastestworking() {
             aria-label="Team of Designers and Developers"
             className="max-w-5xl mx-auto"
           >
-            <h1 className="text-[16px] font-epilogue text-[#d46a5e] uppercase tracking-widest mb-2">
+            <h1 className="text-[16px] font-epilogue text-[#EF6D58] uppercase tracking-widest mb-2">
               Our Team
             </h1>
             <h1 className="text-[56px] font-epilogue font-extrabold mb-8 max-w-xl">
@@ -318,7 +318,7 @@ function Lastestworking() {
                   key={i}
                   className={`w-2.5 h-2.5 rounded-full ${
                     currentSlide === i
-                      ? "bg-[#d46a5e]"
+                      ? "bg-[#EF6D58]"
                       : "border border-[#3a3f5c]"
                   }`}
                 ></span>
@@ -330,7 +330,7 @@ function Lastestworking() {
         {/*Mobile */}
         <main className="flex-col block md:hidden max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-30">
           <section aria-label="Portfolio Latest Work" className="mb-40">
-            <p className="text-[16px] font-epilogue text-[#d46a5e] uppercase tracking-widest mb-2 text-center">
+            <p className="text-[16px] font-epilogue text-[#EF6D58] uppercase tracking-widest mb-2 text-center">
               Portfolio
             </p>
             <h2 className="text-[56px] font-epilogue font-extrabold text-center mb-6">
@@ -339,7 +339,7 @@ function Lastestworking() {
             <div className="relative flex w-full">
               <select
                 aria-label="Subject"
-                className="appearance-none w-full border border-[#E37B65] rounded-sm px-3 py-2 text-sm text-[#A78B5B] focus:outline-none focus:ring-1 font-epilogue focus:ring-[#E06A4F] bg-white"
+                className="appearance-none w-full border border-[#EF6D58] rounded-sm px-3 py-2 text-sm text-[#A78B5B] focus:outline-none focus:ring-1 font-epilogue focus:ring-[#E06A4F] bg-white"
               >
                 <option disabled selected>
                   Select All
@@ -414,7 +414,7 @@ function Lastestworking() {
           >
             <div className="flex flex-col items-start max-w-sm space-y-3">
               <img src={icon} alt="icon" className="h-auto w-auto -mt-[75px]" />
-              <p className="text-[16px] font-epilogue text-[#d46a5e] uppercase tracking-widest mt-2 font-semibold">
+              <p className="text-[16px] font-epilogue text-[#EF6D58] uppercase tracking-widest mt-2 font-semibold">
                 Get Started
               </p>
               <h3 className="text-[24px] font-epilogue font-extrabold mt-2 text-[#1f2538]">
@@ -448,7 +448,7 @@ function Lastestworking() {
             aria-label="Team of Designers and Developers"
             className="max-w-5xl mx-auto"
           >
-            <p className="text-[16px] text-[#d46a5e] uppercase font-epilogue tracking-widest mb-2">
+            <p className="text-[16px] text-[#EF6D58] uppercase font-epilogue tracking-widest mb-2">
               Our Team
             </p>
             <h2 className="text-[40px] font-extrabold mb-8 w-[329px] font-epilogue h-[144px] leading-[48px]">
@@ -530,7 +530,7 @@ function Lastestworking() {
             </div>
 
             <div className="flex justify-center mt-16 space-x-2">
-              <span className="w-2.5 h-2.5 rounded-full bg-[#d46a5e]"></span>
+              <span className="w-2.5 h-2.5 rounded-full bg-[#EF6D58]"></span>
               <span className="w-2.5 h-2.5 rounded-full border border-[#3a3f5c]"></span>
               <span className="w-2.5 h-2.5 rounded-full border border-[#3a3f5c]"></span>
               <span className="w-2.5 h-2.5 rounded-full border border-[#3a3f5c]"></span>
