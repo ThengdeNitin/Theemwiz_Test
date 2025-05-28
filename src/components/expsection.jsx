@@ -44,12 +44,12 @@ function Expsection() {
                 to partner on the long run, and work as an extension of the
                 merchant's team.
               </p>
-              <button
+              <a href="/"><button
                 type="button"
                 className="bg-white text-[#3B1F0B] text-xs font-bold px-4 py-2 font-epilogue rounded shadow-sm hover:bg-[#f0e6dc] transition"
               >
                 <h4>ABOUT US</h4>
-              </button>
+              </button></a>
             </div>
           </section>
 
@@ -87,7 +87,7 @@ function Expsection() {
                 themselves in the merchant's shoes.
               </p>
               <a
-                href="#"
+                href="/"
                 className="text-[16px] text-[#3B1F0B] font-normal hover:underline font-epilogue"
               >
                 <h4>Read More</h4>
@@ -218,7 +218,7 @@ function Expsection() {
                 themselves in the merchant's shoes.
               </p>
               <a
-                href="#"
+                href="/"
                 className="text-[16px] text-[#3B1F0B] font-normal hover:underline font-epilogue"
               >
                 Read More

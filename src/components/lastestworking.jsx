@@ -19,7 +19,7 @@ import rightarrow from "../assets/lastestworking/rightarrow.png";
 
 function Lastestworking() {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const slideWidth = 100; 
+  const slideWidth = 100;
 
   const teamMembers = [
     {
@@ -98,7 +98,7 @@ function Lastestworking() {
 
   const itemsPerPage = 4;
   const maxPage = Math.floor((teamMembers.length - 1) / itemsPerPage);
-  
+
   const handleNext = () => {
     if (currentSlide < maxPage) {
       setCurrentSlide(currentSlide + 1);
@@ -110,7 +110,6 @@ function Lastestworking() {
       setCurrentSlide(currentSlide - 1);
     }
   };
-
 
   return (
     <>
@@ -200,9 +199,9 @@ function Lastestworking() {
             </div>
 
             <div className="flex justify-center mt-12">
-              <button className="text-[10px] font-epilogue font-semibold text-white border border-white px-4 py-2 hover:border-purple-500">
+              <a href="/"><button className="text-[10px] font-epilogue font-semibold text-white border border-white px-4 py-2 hover:border-purple-500">
                 EXPLORE MORE
-              </button>
+              </button></a>
             </div>
           </section>
 
@@ -222,9 +221,9 @@ function Lastestworking() {
               <h2 className="text-[24px] font-epilogue font-extrabold text-[#1f2538] w-[]">
                 We Help Companies Move Faster
               </h2>
-              <button className="bg-[#d46a5e] font-epilogue text-white text-[16px] w-[154px] h-[58px] font-semibold rounded px-4 py-2 hover:bg-[#b85a4d] transition-colors duration-300">
+              <a href="/"><button className="bg-[#d46a5e] font-epilogue text-white text-[16px] w-[154px] h-[58px] font-semibold rounded px-4 py-2 hover:bg-[#b85a4d] transition-colors duration-300">
                 CONTACT US
-              </button>
+              </button></a>
             </div>
 
             <img

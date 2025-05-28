@@ -322,12 +322,13 @@ function Pricing() {
                     </li>
                   </ul>
                 </div>
-                <button
+                <a href="/"><button
                   type="button"
                   className="mb-6 font-extrabold text-[16px] w-[158px] h-[48px] uppercase bg-white text-[#3B1F0B] px-5 py-2 rounded shadow hover:shadow-lg transition-shadow font-epilogue"
                 >
                   Contact Us
                 </button>
+                </a>
               </article>
 
               <article className="w-[329px] h-[493px] flex flex-col justify-between bg-white border border-[#E37B65] shadow-md rounded-md p-6 md:p-7 relative">
@@ -370,12 +371,12 @@ function Pricing() {
                     </li>
                   </ul>
                 </div>
-                <button
+                <a href="/"><button
                   type="button"
                   className="mt-6 mb-4 font-extrabold text-[16px] w-[158px] h-[48px] uppercase bg-[#E37B65] text-white px-5 py-2 rounded shadow hover:shadow-lg font-epilogue transition-shadow"
                 >
                   Contact Us
-                </button>
+                </button></a>
               </article>
 
               <article className="w-[329px] h-[493px] flex flex-col justify-between bg-[#FAEBD7] border border-[#E37B65] rounded-md p-6 md:p-7">
@@ -410,12 +411,14 @@ function Pricing() {
                     </li>
                   </ul>
                 </div>
+                <a href="/">
                 <button
                   type="button"
                   className="mt-6 mb-4 font-extrabold text-[16px] w-[158px] h-[48px] uppercase bg-white text-[#3B1F0B] px-5 py-2 rounded shadow hover:shadow-lg font-epilogue transition-shadow"
                 >
                   Contact Us
                 </button>
+                </a>
               </article>
             </div>
           </section>
@@ -433,9 +436,10 @@ function Pricing() {
                 A digital agency is a business you hire to outsource your
                 digital marketing efforts, instead of handling in-house.
               </p>
-              <p className="text-[16px] font-epilogue font-extrabold text-[#3B1F0B] cursor-pointer select-none">
+              <a href="/"><p className="text-[16px] font-epilogue font-extrabold text-[#3B1F0B] cursor-pointer select-none">
                 Contact Us
               </p>
+              </a>
             </div>
 
           </section>

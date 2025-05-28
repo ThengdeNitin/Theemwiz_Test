@@ -23,7 +23,7 @@ function Main() {
               height: "48px",
             }}
           >
-            <img src={agencyLogo} alt="Agency Logo" className="h-full w-auto" />
+            <a href="/"><img src={agencyLogo} alt="Agency Logo" className="h-full w-auto" /></a>
           </div>
 
           <nav className="hidden md:flex space-x-20 text-sm font-epilogue text-white absolute"
@@ -33,20 +33,20 @@ function Main() {
             top: "28px",
             left: "580px",
           }}>
-            <a className="hover:underline font-epilogue" href="#">
+            <a className="hover:underline font-epilogue" href="/">
               <h4>About</h4>
             </a>
-            <a className="hover:underline font-epilogue" href="#">
+            <a className="hover:underline font-epilogue" href="/">
             <h4>Services</h4>
             </a>
-            <a className="hover:underline font-epilogue" href="#">
+            <a className="hover:underline font-epilogue" href="/">
             <h4>Pricing</h4>
             </a>
-            <a className="hover:underline font-epilogue" href="#">
+            <a className="hover:underline font-epilogue" href="/">
             <h4>Blog</h4>
             </a>
           </nav>
-          <button class="hidden md:block border border-gray-500 text-white font-bold text-xs px-7 py-2 rounded hover:bg-[#f36e4d] hover:border-[#f36e4d] font-epilogue absolute"
+          <a href="/"><button class="hidden md:block border border-gray-500 text-white font-bold text-xs px-7 py-2 rounded hover:bg-[#f36e4d] hover:border-[#f36e4d] font-epilogue absolute"
           style={{
             width: "138px",
             height: "48px",
@@ -54,7 +54,7 @@ function Main() {
             left: "1220px",
           }}>
             CONTACT
-          </button>
+          </button></a>
 
 
 
@@ -66,7 +66,7 @@ function Main() {
             width: "152px",
             height: "48px",
           }}>
-            <img src={agencyLogo} alt="Agency Logo" className="h-full w-auto" />
+            <a href="/"><img src={agencyLogo} alt="Agency Logo" className="h-full w-auto" /></a>
           </div>
           <button class="flex md:hidden w-[48px] h-[48px] text-white font-bold text-xs px-2 py-2 rounded hover:bg-[#f36e4d] hover:border-[#f36e4d] absolute"
           onClick={() => setIsOpen(!isOpen)}
@@ -78,10 +78,10 @@ function Main() {
           </button>
           {isOpen && (
         <div className="md:hidden text-center font-epilogue absolute w-[150px] top-[60px] left-53 right-4 bg-[#2b3045] rounded shadow-lg z-50 px-4 py-3 space-y-2">
-          <a className="block hover:underline font-epilogue" href="#"><h4>About</h4></a>
-          <a className="block hover:underline font-epilogue" href="#"><h4>Services </h4></a>
-          <a className="block hover:underline font-epilogue" href="#"><h4>Pricing</h4></a>
-          <a className="block hover:underline font-epilogue" href="#"><h4>Blog</h4></a>
+          <a className="block hover:underline font-epilogue" href="/"><h4>About</h4></a>
+          <a className="block hover:underline font-epilogue" href="/"><h4>Services </h4></a>
+          <a className="block hover:underline font-epilogue" href="/"><h4>Pricing</h4></a>
+          <a className="block hover:underline font-epilogue" href="/"><h4>Blog</h4></a>
         </div>
       )}
         </header>
@@ -111,12 +111,13 @@ function Main() {
               design, business understanding.
             </p>
             <div className="flex items-center space-x-6">
-              <button className="w-[154px] h-[48px] bg-[#f36e4d] text-white font-bold text-xs rounded tracking-widest hover:bg-[#e05a3a] transition font-epilogue">
-                <h1>HOW WE WORK</h1>
+            <a href="/"><button className="w-[154px] h-[48px] bg-[#f36e4d] text-white font-bold text-xs rounded tracking-widest hover:bg-[#e05a3a] transition font-epilogue">
+              <h1>HOW WE WORK</h1>
               </button>
+              </a>
               <a
                 className="text-white md:text-[16px] text-sm hover:underline font-epilogue"
-                href="#"
+                href="/"
               >
                 <h1>Contact Us</h1>
               </a>
@@ -176,7 +177,7 @@ function Main() {
               </button>
               <a
                 className="text-white md:text-[16px] text-sm hover:underline font-epilogue"
-                href="#"
+                href="/"
               >
                 Contact Us
               </a>

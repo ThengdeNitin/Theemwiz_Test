@@ -121,12 +121,14 @@ function Footer() {
               </div>
 
               <div className="flex justify-end">
-                <button
-                  type="submit"
-                  className="bg-[#E06A4F] w-[154px] h-[48px] text-white font-extrabold text-[16px] uppercase px-5 py-2 rounded-sm hover:bg-[#d55a3f] transition-colors font-epilogue"
-                >
-                  Submit Now
-                </button>
+                <a href="/">
+                  <button
+                    type="submit"
+                    className="bg-[#E06A4F] w-[154px] h-[48px] text-white font-extrabold text-[16px] uppercase px-5 py-2 rounded-sm hover:bg-[#d55a3f] transition-colors font-epilogue"
+                  >
+                    Submit Now
+                  </button>
+                </a>
               </div>
             </form>
           </div>
@@ -147,22 +149,30 @@ function Footer() {
                 <h4 className="text-[#E06A4F] text-[16px] font-semibold tracking-widest font-epilogue mb-4">
                   MENU
                 </h4>
-                <ul className="text-[#3B1F0B] text-[16px] font-epilogue space-y-1">
-                  <li>About</li>
-                  <li>Services</li>
-                  <li>Blog</li>
-                  <li>Contact</li>
+                <ul className="text-[#3B1F0B] text-[16px] font-epilogue space-y-1.5">
+                  <li>
+                    <a href="/">About</a>
+                  </li>
+                  <li>
+                    <a href="/">Services</a>
+                  </li>
+                  <li>
+                    <a href="/">Blog</a>
+                  </li>
+                  <li>
+                    <a href="/">Contact</a>
+                  </li>
                 </ul>
               </div>
               <div>
                 <h4 className="text-[#E06A4F] text-[16px] font-semibold tracking-widest font-epilogue mb-4">
                   SERVICE
                 </h4>
-                <ul className="text-[#3B1F0B] text-[16px] font-epilogue space-y-1">
-                  <li>Design</li>
-                  <li>Development</li>
-                  <li>Marketing</li>
-                  <li>See More</li>
+                <ul className="text-[#3B1F0B] text-[16px] font-epilogue space-y-1.5">
+                    <li><a href="/">Design </a></li>
+                    <li><a href="/">Development </a></li>                
+                    <li><a href="/">Marketing </a></li>
+                    <li><a href="/">See More </a></li>
                 </ul>
               </div>
             </div>
@@ -202,10 +212,10 @@ function Footer() {
           <div className="max-w-7xl mx-auto mt-16 pt-6 border-t border-[#E6D3B3] flex flex-col md:flex-row justify-between text-[16px] text-[#8B6E4A] px-2 font-epilogue">
             <p>Copyright © 2022 Laaiq. All Rights Reserved.</p>
             <div className="flex space-x-8 mt-4 md:mt-0">
-              <a className="hover:underline font-epilogue" href="#">
+              <a className="hover:underline font-epilogue" href="/">
                 Terms of Use
               </a>
-              <a className="hover:underline font-epilogue" href="#">
+              <a className="hover:underline font-epilogue" href="/">
                 Privacy Policy
               </a>
             </div>
@@ -250,12 +260,14 @@ function Footer() {
                 rows="3"
               ></textarea>
               <div className="flex justify-end">
-                <button
-                  className="bg-[#E06A4F] w-[154px] h-[48px] text-white font-extrabold text-[16px] uppercase px-5 py-2 rounded-sm hover:bg-[#d55a3f] transition-colors font-epilogue"
-                  type="submit"
-                >
-                  Submit Now
-                </button>
+                <a href="/">
+                  <button
+                    className="bg-[#E06A4F] w-[154px] h-[48px] text-white font-extrabold text-[16px] uppercase px-5 py-2 rounded-sm hover:bg-[#d55a3f] transition-colors font-epilogue"
+                    type="submit"
+                  >
+                    Submit Now
+                  </button>
+                </a>
               </div>
             </form>
           </div>
@@ -283,22 +295,40 @@ function Footer() {
                 <h4 className="text-[#E06A4F] text-center text-[16px] font-epilogue font-semibold tracking-widest mb-6">
                   MENU
                 </h4>
-                <ul className="text-[#3B1F0B] text-center text-[16px] font-epilogue space-y-2">
-                  <li><h4>About</h4></li>
-                  <li><h4>Services</h4></li>
-                  <li><h4>Blog</h4></li>
-                  <li><h4>Contact</h4></li>
+                <ul className="text-[#3B1F0B] text-center text-[16px] font-epilogue space-y-1.5">
+                 
+                    <li>
+                      <h4><a href="/">About</a></h4>
+                    </li>
+                    <li>
+                      <h4><a href="/">Services</a></h4>
+                    </li>
+                    <li>
+                      <h4><a href="/">Blog</a></h4>
+                    </li>
+                    <li>
+                      <h4><a href="/">Contact</a></h4>
+                    </li>
+                 
                 </ul>
               </div>
               <div className="flex mt-4 flex-col">
                 <h4 className="text-[#E06A4F] text-center text-[16px] font-semibold font-epilogue tracking-widest mb-6">
                   SERVICE
                 </h4>
-                <ul className="text-[#3B1F0B] text-center text-[16px] font-epilogue space-y-2">
-                  <li><h4>Design</h4></li>
-                  <li><h4>Development</h4></li>
-                  <li><h4>Marketing</h4></li>
-                  <li><h4>See More</h4></li>
+                <ul className="text-[#3B1F0B] text-center text-[16px] font-epilogue space-y-1.5">
+                    <li>
+                      <h4><a href="/">Design </a></h4>
+                    </li>
+                    <li>
+                      <h4><a href="/">Development </a></h4>
+                    </li>
+                    <li>
+                      <h4><a href="/">Marketing </a></h4>
+                    </li>                 
+                    <li>
+                      <h4><a href="/">See More </a></h4>
+                    </li>
                 </ul>
               </div>
             </div>
@@ -312,10 +342,10 @@ function Footer() {
               Copyright © 2022 Laaiq. All Rights Reserved.
             </span>
             <div className="flex space-x-38 mt-4 md:mt-0">
-              <a className="hover:underline font-epilogue" href="#">
+              <a className="hover:underline font-epilogue" href="/">
                 Terms of Use
               </a>
-              <a className="hover:underline font-epilogue" href="#">
+              <a className="hover:underline font-epilogue" href="/">
                 Privacy Policy
               </a>
             </div>
