@@ -1,10 +1,32 @@
 import "../App.css";
+import { useState } from "react";
 import down from "../assets/pricing/down.png";
 import up from "../assets/pricing/up.png";
 import plus from "../assets/pricing/plus.png";
 import minus from "../assets/pricing/minus.png";
 
 function Pricing() {
+  const [openIndex, setOpenIndex] = useState(0);
+  const faqs = [
+    {
+      question: "A digital agency is a business",
+      answer: `Digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital
+        solutions to promote your product or service online and help you hit your marketing goals and grow your business.`,
+    },
+    {
+      question: "Hire to outsource your digital",
+      answer: `Outsourcing can give access to experienced professionals and free up your team to focus on strategy.`,
+    },
+    {
+      question: "Marketing efforts",
+      answer: `They handle SEO, ads, social media, and content to drive results for your business.`,
+    },
+    {
+      question: "Can provide your business",
+      answer: `Digital agencies can improve your brand reach and increase ROI through targeted campaigns.`,
+    },
+  ];
+
   return (
     <>
       <div className="bg-[#FAEBD7]">
@@ -12,13 +34,13 @@ function Pricing() {
         <main className="hidden md:block max-w-7xl mx-auto px-6 py-16 md:py-24">
           <section className="max-w-7xl mx-auto mb-20 md:mb-28">
             <div className="max-w-md md:max-w-lg mb-26">
-              <p className="text-[16px] font-semibold tracking-widest text-[#E37B65] uppercase font-epilogue mb-2">
+              <h4 className="text-[16px] font-semibold tracking-widest text-[#E37B65] uppercase font-epilogue mb-2">
                 Pricing
-              </p>
-              <h2 className="text-[56px] font-extrabold text-black leading-tight font-epilogue">
+              </h4>
+              <h1 className="text-[56px] font-extrabold text-black leading-tight font-epilogue">
                 Check Our <br />
                 Pricing Plans
-              </h2>
+              </h1>
             </div>
 
             <div
@@ -26,12 +48,12 @@ function Pricing() {
               role="list"
             >
               <article className="flex-1 bg-[#FAEBD7] border border-[#E37B65] rounded-md p-6 md:p-7">
-                <p className="text-[16px] font-semibold tracking-widest font-epilogue text-[#E37B65] uppercase mb-4">
+                <h4 className="text-[16px] font-semibold tracking-widest font-epilogue text-[#E37B65] uppercase mb-4">
                   Consultation
-                </p>
-                <h3 className="font-extrabold text-black text-[40px] font-epilogue mb-2">
+                </h4>
+                <h1 className="font-extrabold text-black text-[40px] font-epilogue mb-2">
                   Free
-                </h3>
+                </h1>
                 <p className="text-[16px] text-[#6B5B4B] mb-6 font-epilogue leading-relaxed">
                   Your digital marketing efforts, instead of handling in-house.
                 </p>
@@ -76,9 +98,9 @@ function Pricing() {
                 <span className="absolute top-4 left-4 w-[92px] h-[38px] bg-[#E37B65] border-[#E37B65] text-white text-[16px] font-semibold rounded-full font-epilogue px-4 py-2">
                   Popular
                 </span>
-                <p className="text-[16px] font-epilogue font-semibold tracking-widest text-[#E37B65] uppercase mb-4 mt-10">
+                <h4 className="text-[16px] font-epilogue font-semibold tracking-widest text-[#E37B65] uppercase mb-4 mt-10">
                   Design
-                </p>
+                </h4>
                 <h3 className="font-extrabold font-epilogue text-black text-[40px] mb-2">
                   $1500
                 </h3>
@@ -124,9 +146,9 @@ function Pricing() {
               </article>
 
               <article className="flex-1 bg-[#FAEBD7] border border-[#E37B65] rounded-md p-6 md:p-7">
-                <p className="text-[16px] font-epilogue font-semibold tracking-widest text-[#E37B65] uppercase mb-4">
+                <h4 className="text-[16px] font-epilogue font-semibold tracking-widest text-[#E37B65] uppercase mb-4">
                   Design · Code
-                </p>
+                </h4>
                 <h3 className="font-extrabold font-epilogue text-black text-[40px] mb-2">
                   $2900
                 </h3>
@@ -174,101 +196,64 @@ function Pricing() {
 
           <section className="max-w-7xl mx-auto mb-6 flex flex-col md:flex-row gap-12 md:gap-70">
             <div className="max-w-md md:max-w-s">
-              <p className="text-[16px] font-epilogue font-semibold tracking-widest text-[#E37B65] uppercase mb-2">
+              <h4 className="text-[16px] font-epilogue font-semibold tracking-widest text-[#E37B65] uppercase mb-2">
                 FAQ
-              </p>
-              <h2 className="text-[40px] font-epilogue text-[#391400] font-extrabold leading-tight mb-4">
+              </h4>
+              <h1 className="text-[40px] font-epilogue text-[#391400] font-extrabold leading-tight mb-4">
                 Frequently Asked Questions
-              </h2>
-              <p className="text-[16px] font-epilogue text-[#6B5B4B] mb-6 leading-relaxed max-w-[320px]">
+              </h1>
+              <p className="text-[16px] font-epilogue text-[#6B5B4B] mb-6 leading-relaxed max-w-[420px]">
                 A digital agency is a business you hire to outsource your
                 digital marketing efforts, instead of handling in-house.
               </p>
-              <p className="text-[16px] font-epilogue font-extrabold text-[#3B1F0B] cursor-pointer select-none">
+              <h4 className="text-[16px] font-epilogue font-bold text-[#3B1F0B] cursor-pointer select-none">
                 Contact Us
-              </p>
+              </h4>
             </div>
 
-            <div className="w-full">
+            <div className="max-w-md md:max-w-xl">
               <div
                 className="bg-white rounded-md shadow-md divide-y divide-[#F0D9CC] border border-[#E37B65]"
                 role="list"
               >
-                <div className="p-8" role="listitem">
-                  <div className="flex justify-between items-center mb-3">
-                    <h3 className="font-extrabold font-epilogue text-[#3B1F0B] text-[24px] leading-tight max-w-[85%]">
-                      A digital agency is a business
-                    </h3>
-                    <button
-                      aria-expanded="true"
-                      aria-controls="faq1"
-                      className="text-[#E37B65] text-lg h-[32px] w-[32px]"
-                      aria-label="Collapse A digital agency is a business"
+                {faqs.map((faq, index) => (
+                  <div key={index} role="listitem">
+                    <div
+                      className={`p-8 flex justify-between items-center ${
+                        index === openIndex ? "" : "!bg-[#FAEBD7]"
+                      }`}
                     >
-                      <img src={up} alt="up" className="h-full w-full" />
-                    </button>
+                      <h2 className="font-extrabold font-epilogue text-[#3B1F0B] text-[24px] leading-tight max-w-[85%]">
+                        {faq.question}
+                      </h2>
+                      <button
+                        onClick={() =>
+                          setOpenIndex(openIndex === index ? null : index)
+                        }
+                        aria-expanded={openIndex === index}
+                        aria-controls={`faq${index}`}
+                        className="text-[#E37B65] text-lg h-[32px] w-[32px]"
+                        aria-label={`${
+                          openIndex === index ? "Collapse" : "Expand"
+                        } ${faq.question}`}
+                      >
+                        <img
+                          src={openIndex === index ? up : down}
+                          alt={openIndex === index ? "up" : "down"}
+                          className="h-full w-full"
+                        />
+                      </button>
+                    </div>
+                    {openIndex === index && (
+                      <p
+                        id={`faq${index}`}
+                        className="px-8 pb-8 text-[#6B5B4B] font-epilogue text-[16px] leading-relaxed max-w-[90%]"
+                      >
+                        {faq.answer}
+                      </p>
+                    )}
                   </div>
-                  <p
-                    id="faq1"
-                    className="text-[#6B5B4B] font-epilogue text-[16px] leading-relaxed max-w-[90%]"
-                  >
-                    Digital marketing efforts, instead of handling in-house.
-                    They can provide your business with a variety of digital
-                    solutions to promote your product or service online and help
-                    you hit your marketing goals and grow your business.
-                  </p>
-                </div>
-
-                <div
-                  className="p-8 cursor-pointer flex justify-between items-center !bg-[#FAEBD7] border-[#E37B65]"
-                  role="listitem"
-                >
-                  <h3 className="font-extrabold font-epilogue text-[#3B1F0B] text-[24px] leading-tight max-w-[85%]">
-                    Hire to outsource your digital
-                  </h3>
-                  <button
-                    aria-expanded="false"
-                    aria-controls="faq2"
-                    className="text-[#E37B65] text-lg h-[32px] w-[32px]"
-                    aria-label="Expand Hire to outsource your digital"
-                  >
-                    <img src={down} alt="down" className="h-full w-full" />
-                  </button>
-                </div>
-
-                <div
-                  className="p-8 cursor-pointer flex justify-between items-center !bg-[#FAEBD7] border-[#E37B65]"
-                  role="listitem"
-                >
-                  <h3 className="font-extrabold font-epilogue text-[#3B1F0B] text-[24px] leading-tight max-w-[85%]">
-                    Marketing efforts
-                  </h3>
-                  <button
-                    aria-expanded="false"
-                    aria-controls="faq3"
-                    className="text-[#E37B65] text-lg h-[32px] w-[32px]"
-                    aria-label="Expand Marketing efforts"
-                  >
-                    <img src={down} alt="down" className="h-full w-full" />
-                  </button>
-                </div>
-
-                <div
-                  className="p-8 cursor-pointer flex justify-between items-center rounded-b-md !bg-[#FAEBD7] border-[#E37B65]"
-                  role="listitem"
-                >
-                  <h3 className="font-extrabold font-epilogue text-[#3B1F0B] text-[24px] leading-tight max-w-[85%]">
-                    Can provide your business
-                  </h3>
-                  <button
-                    aria-expanded="false"
-                    aria-controls="faq4"
-                    className="text-[#E37B65] text-lg h-[32px] w-[32px]"
-                    aria-label="Expand Can provide your business"
-                  >
-                    <img src={down} alt="down" className="h-full w-full" />
-                  </button>
-                </div>
+                ))}
               </div>
             </div>
           </section>
@@ -286,7 +271,10 @@ function Pricing() {
               </h2>
             </div>
 
-            <div className="flex flex-col md:flex-row max-w-7xl mx-auto" role="list">
+            <div
+              className="flex flex-col md:flex-row max-w-7xl mx-auto"
+              role="list"
+            >
               <article className="w-[329px] h-[493px] flex flex-col justify-between bg-[#FAEBD7] border border-[#E37B65] rounded-md p-6 md:p-7">
                 <div className="mt-6">
                   <p className="text-[16px] font-epilogue font-semibold tracking-widest text-[#E37B65] w-[142px] h-[32px] mb-2">
@@ -304,7 +292,9 @@ function Pricing() {
                       <span className="flex items-center justify-center w-5 h-5 rounded-full bg-[#E37B65] text-white">
                         <img src={plus} alt="plus" className="h-full w-full" />
                       </span>
-                      <span className="w-[103px] font-epilogue h-[32px]">Brand Design</span>
+                      <span className="w-[103px] font-epilogue h-[32px]">
+                        Brand Design
+                      </span>
                     </li>
                     <li className="flex items-center gap-2">
                       <span className="flex items-center justify-center w-5 h-5 rounded-full bg-[#F0D9CC] text-[#D9C6B9]">
@@ -315,7 +305,7 @@ function Pricing() {
                         />
                       </span>
                       <span className="w-[103px] h-[32px] font-epilogue">
-                      Market Analysis
+                        Market Analysis
                       </span>
                     </li>
                     <li className="flex items-center gap-2">
@@ -326,7 +316,9 @@ function Pricing() {
                           className="h-full w-full"
                         />
                       </span>
-                      <span className="w-[103px] h-[32px] font-epilogue">Production</span>
+                      <span className="w-[103px] h-[32px] font-epilogue">
+                        Production
+                      </span>
                     </li>
                   </ul>
                 </div>
@@ -446,88 +438,6 @@ function Pricing() {
               </p>
             </div>
 
-            <div className="w-full">
-              <div
-                className="bg-white rounded-md shadow-md divide-y divide-[#F0D9CC] border border-[#E37B65]"
-                role="list"
-              >
-                <div className="p-8" role="listitem">
-                  <div className="flex justify-between items-center mb-3">
-                    <h3 className="font-extrabold font-epilogue text-[#3B1F0B] text-[24px] leading-tight max-w-[85%]">
-                      A digital agency is a business
-                    </h3>
-                    <button
-                      aria-expanded="true"
-                      aria-controls="faq1"
-                      className="text-[#E37B65] text-lg h-[32px] w-[32px]"
-                      aria-label="Collapse A digital agency is a business"
-                    >
-                      <img src={up} alt="up" className="h-full w-full" />
-                    </button>
-                  </div>
-                  <p
-                    id="faq1"
-                    className="text-[#6B5B4B] font-epilogue text-[16px] leading-relaxed max-w-[90%]"
-                  >
-                    Digital marketing efforts, instead of handling in-house.
-                    They can provide your business with a variety of digital
-                    solutions to promote your product or service online and help
-                    you hit your marketing goals and grow your business.
-                  </p>
-                </div>
-
-                <div
-                  className="p-8 cursor-pointer flex justify-between items-center !bg-[#FAEBD7] border-[#E37B65]"
-                  role="listitem"
-                >
-                  <h3 className="font-extrabold font-epilogue text-[#3B1F0B] text-[24px] leading-tight max-w-[85%]">
-                    Hire to outsource your digital
-                  </h3>
-                  <button
-                    aria-expanded="false"
-                    aria-controls="faq2"
-                    className="text-[#E37B65] text-lg h-[32px] w-[32px]"
-                    aria-label="Expand Hire to outsource your digital"
-                  >
-                    <img src={down} alt="down" className="h-full w-full" />
-                  </button>
-                </div>
-
-                <div
-                  className="p-8 cursor-pointer flex justify-between items-center !bg-[#FAEBD7] border-[#E37B65]"
-                  role="listitem"
-                >
-                  <h3 className="font-extrabold font-epilogue text-[#3B1F0B] text-[24px] leading-tight max-w-[85%]">
-                    Marketing efforts
-                  </h3>
-                  <button
-                    aria-expanded="false"
-                    aria-controls="faq3"
-                    className="text-[#E37B65] text-lg h-[32px] w-[32px]"
-                    aria-label="Expand Marketing efforts"
-                  >
-                    <img src={down} alt="down" className="h-full w-full" />
-                  </button>
-                </div>
-
-                <div
-                  className="p-8 cursor-pointer flex justify-between items-center rounded-b-md !bg-[#FAEBD7] border-[#E37B65]"
-                  role="listitem"
-                >
-                  <h3 className="font-extrabold font-epilogue text-[#3B1F0B] text-[24px] leading-tight max-w-[85%]">
-                    Can provide your business
-                  </h3>
-                  <button
-                    aria-expanded="false"
-                    aria-controls="faq4"
-                    className="text-[#E37B65] text-lg h-[32px] w-[32px]"
-                    aria-label="Expand Can provide your business"
-                  >
-                    <img src={down} alt="down" className="h-full w-full" />
-                  </button>
-                </div>
-              </div>
-            </div>
           </section>
         </main>
       </div>

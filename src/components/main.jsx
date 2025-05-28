@@ -34,16 +34,16 @@ function Main() {
             left: "580px",
           }}>
             <a className="hover:underline font-epilogue" href="#">
-              About
+              <h4>About</h4>
             </a>
             <a className="hover:underline font-epilogue" href="#">
-              Services
+            <h4>Services</h4>
             </a>
             <a className="hover:underline font-epilogue" href="#">
-              Pricing
+            <h4>Pricing</h4>
             </a>
             <a className="hover:underline font-epilogue" href="#">
-              Blog
+            <h4>Blog</h4>
             </a>
           </nav>
           <button class="hidden md:block border border-gray-500 text-white font-bold text-xs px-7 py-2 rounded hover:bg-[#f36e4d] hover:border-[#f36e4d] font-epilogue absolute"
@@ -78,10 +78,10 @@ function Main() {
           </button>
           {isOpen && (
         <div className="md:hidden text-center font-epilogue absolute w-[150px] top-[60px] left-53 right-4 bg-[#2b3045] rounded shadow-lg z-50 px-4 py-3 space-y-2">
-          <a className="block hover:underline font-epilogue" href="#">About</a>
-          <a className="block hover:underline font-epilogue" href="#">Services</a>
-          <a className="block hover:underline font-epilogue" href="#">Pricing</a>
-          <a className="block hover:underline font-epilogue" href="#">Blog</a>
+          <a className="block hover:underline font-epilogue" href="#"><h4>About</h4></a>
+          <a className="block hover:underline font-epilogue" href="#"><h4>Services </h4></a>
+          <a className="block hover:underline font-epilogue" href="#"><h4>Pricing</h4></a>
+          <a className="block hover:underline font-epilogue" href="#"><h4>Blog</h4></a>
         </div>
       )}
         </header>
@@ -96,7 +96,7 @@ function Main() {
           }}>
           <section className="w-1/2 pr-2">
             <p className="text-[#f36e4d] text-xs md:text-[16px] font-semibold tracking-widest mb-2 font-epilogue">
-              MODERN STUDIO
+              <h4>MODERN STUDIO</h4>
             </p>
             <h1 className="text-white font-extrabold text-[40px] md:text-[72px] leading-tight mb-4 font-epilogue"
             >
@@ -112,13 +112,13 @@ function Main() {
             </p>
             <div className="flex items-center space-x-6">
               <button className="w-[154px] h-[48px] bg-[#f36e4d] text-white font-bold text-xs rounded tracking-widest hover:bg-[#e05a3a] transition font-epilogue">
-                HOW WE WORK
+                <h1>HOW WE WORK</h1>
               </button>
               <a
                 className="text-white md:text-[16px] text-sm hover:underline font-epilogue"
                 href="#"
               >
-                Contact Us
+                <h1>Contact Us</h1>
               </a>
             </div>
             <div className="flex items-center space-x-3 mt-16 mb-16">

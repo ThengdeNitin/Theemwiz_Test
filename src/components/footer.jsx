@@ -1,10 +1,62 @@
 import "../App.css";
+import { useState } from "react";
 import map from "../assets/footer/map.png";
 import pin from "../assets/footer/pin.png";
 import social from "../assets/footer/social.png";
+import oval from "../assets/footer/Oval.png";
+import fb from "../assets/footer/facebook.png";
+import twit from "../assets/footer/twitter.png";
+import insta from "../assets/footer/instagram.png";
 import triangle from "../assets/footer/Triangle.png";
 
 function Footer() {
+  const [form, setForm] = useState({
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const [errors, setErrors] = useState({});
+
+  const validate = () => {
+    const newErrors = {};
+
+    if (!form.email) {
+      newErrors.email = "Email is required";
+    } else if (!/\S+@\S+\.\S+/.test(form.email)) {
+      newErrors.email = "Enter a valid email";
+    }
+
+    if (!form.subject) {
+      newErrors.subject = "Please select a subject";
+    }
+
+    if (!form.message) {
+      newErrors.message = "Message is required";
+    } else if (form.message.length < 10) {
+      newErrors.message = "Message should be at least 10 characters";
+    }
+
+    return newErrors;
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const validationErrors = validate();
+    if (Object.keys(validationErrors).length === 0) {
+      console.log("Form submitted:", form);
+      // Handle submission (API call, reset, etc.)
+    } else {
+      setErrors(validationErrors);
+    }
+  };
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm((prev) => ({ ...prev, [name]: value }));
+    setErrors((prev) => ({ ...prev, [name]: "" }));
+  };
+
   return (
     <>
       <div className="bg-[#FAEBD7] text-[#3B1F0B]">
@@ -15,41 +67,63 @@ function Footer() {
             <h2 className="font-extrabold text-[#3B1F0B] text-[24px] mb-6 font-epilogue">
               Get In Touch
             </h2>
-            <form className="space-y-4">
-              <input
-                className="w-full border border-[#E37B65] rounded-sm px-3 py-2 text-sm placeholder-[#A78B5B] focus:outline-none focus:ring-1 focus:ring-[#E06A4F]"
-                placeholder="Your email"
-                type="email"
-              />
+            <form className="space-y-4" onSubmit={handleSubmit}>
+              <div>
+                <input
+                  name="email"
+                  type="email"
+                  placeholder="Your email"
+                  value={form.email}
+                  onChange={handleChange}
+                  className="w-full border border-[#E37B65] rounded-sm px-3 py-2 text-sm placeholder-[#A78B5B] focus:outline-none focus:ring-1 focus:ring-[#E06A4F]"
+                />
+                {errors.email && (
+                  <p className="text-red-500 text-xs mt-1">{errors.email}</p>
+                )}
+              </div>
+
               <div className="relative w-full">
                 <select
-                  aria-label="Subject"
+                  name="subject"
+                  value={form.subject}
+                  onChange={handleChange}
                   className="appearance-none w-full border border-[#E37B65] rounded-sm px-3 py-2 text-sm text-[#A78B5B] focus:outline-none focus:ring-1 focus:ring-[#E06A4F] font-epilogue"
                 >
-                  <option disabled selected>
+                  <option value="" disabled>
                     Subject
                   </option>
                   <option>Subject 1</option>
                   <option>Subject 2</option>
                   <option>Subject 3</option>
                 </select>
-
                 <img
                   src={triangle}
                   alt="dropdown arrow"
                   className="pointer-events-none absolute right-3 top-1/2 transform -translate-y-1/2 w-[10px] h-[6px]"
                 />
+                {errors.subject && (
+                  <p className="text-red-500 text-xs mt-1">{errors.subject}</p>
+                )}
               </div>
 
-              <textarea
-                className="w-full border border-[#E37B65] rounded-sm px-3 py-2 text-sm placeholder-[#A78B5B] resize-none focus:outline-none focus:ring-1 focus:ring-[#E06A4F]"
-                placeholder="Message"
-                rows="3"
-              ></textarea>
+              <div>
+                <textarea
+                  name="message"
+                  value={form.message}
+                  onChange={handleChange}
+                  placeholder="Message"
+                  rows="3"
+                  className="w-full border border-[#E37B65] rounded-sm px-3 py-2 text-sm placeholder-[#A78B5B] resize-none focus:outline-none focus:ring-1 focus:ring-[#E06A4F]"
+                />
+                {errors.message && (
+                  <p className="text-red-500 text-xs mt-1">{errors.message}</p>
+                )}
+              </div>
+
               <div className="flex justify-end">
                 <button
-                  className="bg-[#E06A4F] w-[154px] h-[48px] text-white font-extrabold text-[16px] uppercase px-5 py-2 rounded-sm hover:bg-[#d55a3f] transition-colors"
-                  type="submit font-epilogue"
+                  type="submit"
+                  className="bg-[#E06A4F] w-[154px] h-[48px] text-white font-extrabold text-[16px] uppercase px-5 py-2 rounded-sm hover:bg-[#d55a3f] transition-colors font-epilogue"
                 >
                   Submit Now
                 </button>
@@ -92,8 +166,37 @@ function Footer() {
                 </ul>
               </div>
             </div>
-            <div className="flex-1 flex justify-end items-start max-w-xs w-[160px] h-[48px] space-x-4">
-              <img src={social} alt="social" className="h-full w-auto" />
+            <div className="flex-1 flex justify-end items-start max-w-xs w-[48px] h-[48px] space-x-4">
+              <a
+                href="https://www.facebook.com"
+                className="relative w-[48px] h-[48px]"
+              >
+                <img src={oval} alt="facebook" className="h-full w-auto" />
+                <img
+                  src={fb}
+                  alt="facebook logo"
+                  className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                />
+              </a>
+              <a href="https://x.com" className="relative w-[48px] h-[48px]">
+                <img src={oval} alt="twitter" className="h-full w-auto" />
+                <img
+                  src={twit}
+                  alt="twitter logo"
+                  className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                />
+              </a>
+              <a
+                href="https://www.instagram.com"
+                className="relative w-[48px] h-[48px]"
+              >
+                <img src={oval} alt="instagram" className="h-full w-auto" />
+                <img
+                  src={insta}
+                  alt="instagram logo"
+                  className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                />
+              </a>
             </div>
           </div>
           <div className="max-w-7xl mx-auto mt-16 pt-6 border-t border-[#E6D3B3] flex flex-col md:flex-row justify-between text-[16px] text-[#8B6E4A] px-2 font-epilogue">
@@ -171,9 +274,9 @@ function Footer() {
         <footer className="block md:hidden bg-[#FAEBD7] border-t border-[#E6D3B3] pt-16 pb-6 px-6 sm:px-12 md:px-20">
           <div className="max-w-7xl mt-5 mx-auto flex flex-col md:justify-between items-center gap-10 md:gap-0">
             <div className="flex-1 max-w-xs">
-              <h3 className="font-extrabold text-[#3B1F0B] text-[24px] w-[90px] h-[32px] font-epilogue mb-6">
+              <h2 className="font-extrabold text-[#3B1F0B] text-[24px] w-[90px] h-[32px] font-epilogue mb-6">
                 Agency
-              </h3>
+              </h2>
             </div>
             <div className="flex flex-col max-w-xs space-y-6">
               <div className="flex flex-col">
@@ -181,10 +284,10 @@ function Footer() {
                   MENU
                 </h4>
                 <ul className="text-[#3B1F0B] text-center text-[16px] font-epilogue space-y-2">
-                  <li>About</li>
-                  <li>Services</li>
-                  <li>Blog</li>
-                  <li>Contact</li>
+                  <li><h4>About</h4></li>
+                  <li><h4>Services</h4></li>
+                  <li><h4>Blog</h4></li>
+                  <li><h4>Contact</h4></li>
                 </ul>
               </div>
               <div className="flex mt-4 flex-col">
@@ -192,10 +295,10 @@ function Footer() {
                   SERVICE
                 </h4>
                 <ul className="text-[#3B1F0B] text-center text-[16px] font-epilogue space-y-2">
-                  <li>Design</li>
-                  <li>Development</li>
-                  <li>Marketing</li>
-                  <li>See More</li>
+                  <li><h4>Design</h4></li>
+                  <li><h4>Development</h4></li>
+                  <li><h4>Marketing</h4></li>
+                  <li><h4>See More</h4></li>
                 </ul>
               </div>
             </div>
