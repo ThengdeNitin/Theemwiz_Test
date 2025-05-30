@@ -19,6 +19,7 @@ import rightarrow from "../assets/lastestworking/rightarrow.png";
 
 function Lastestworking() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [showMore, setShowMore] = useState(false);
   const slideWidth = 100;
 
   const teamMembers = [
@@ -111,6 +112,97 @@ function Lastestworking() {
     }
   };
 
+  const data = [
+    {
+      id: 1,
+      title: "SOFA",
+      category: "Design",
+      image: sofa,
+      span: "col-span-2",
+    },
+    {
+      id: 2,
+      title: "KeyBoard",
+      category: "Branding",
+      image: keyboard,
+      span: "col-span-4",
+    },
+    {
+      id: 3,
+      title: "Work Media",
+      category: "Illustration",
+      image: workmedia,
+      span: "col-span-4",
+    },
+    {
+      id: 4,
+      title: "DDDone",
+      category: "Motion",
+      image: dddone,
+      span: "col-span-2",
+    },
+  ];
+
+  const categories = [
+    { label: "Show All", value: "All", count: 14 },
+    { label: "Design", value: "Design", count: 9 },
+    { label: "Branding", value: "Branding", count: 4 },
+    { label: "Illustration", value: "Illustration", count: 3 },
+    { label: "Motion", value: "Motion", count: 2 },
+  ];
+
+  const GridContent = () => (
+    <div className="grid grid-cols-6 gap-6 max-w-7xl mx-auto mt-15">
+      <article className="col-span-2 relative rounded-lg overflow-hidden cursor-pointer">
+        <img src={sofa} alt="sofa" className="h-full w-full object-cover" />
+        <div className="absolute font-epilogue top-88 left-8 bg-white text-[#1f2538] text-[10px] font-semibold rounded-full px-3 py-1 select-none">
+          <h4>Design</h4>
+        </div>
+        <h1 className="absolute font-epilogue bottom-8 left-8 text-white text-[40px] font-extrabold drop-shadow-lg select-none">
+          SOFA
+        </h1>
+      </article>
+
+      <article className="col-span-4 relative rounded-lg overflow-hidden cursor-pointer">
+        <img
+          src={keyboard}
+          alt="keyboard"
+          className="h-full w-full object-cover"
+        />
+        <div className="absolute top-88 left-8 bg-white text-[#1f2538] text-[10px] font-semibold rounded-full px-3 py-1 select-none font-epilogue">
+          <h4>Branding</h4>
+        </div>
+        <h1 className="absolute bottom-8 left-8 text-white text-[40px] font-epilogue font-extrabold drop-shadow-lg select-none">
+          KeyBoard
+        </h1>
+      </article>
+
+      <article className="col-span-4 relative rounded-lg overflow-hidden cursor-pointer">
+        <img
+          src={workmedia}
+          alt="workmedia"
+          className="h-full w-full object-cover"
+        />
+        <div className="absolute font-epilogue top-88 left-8 bg-white text-[#1f2538] text-[10px] font-semibold rounded-full px-3 py-1 select-none">
+          <h4>Illustration</h4>
+        </div>
+        <h1 className="absolute font-epilogue bottom-8 left-8 text-white text-[40px] font-extrabold drop-shadow-lg select-none">
+          Work Media
+        </h1>
+      </article>
+
+      <article className="col-span-2 relative rounded-lg overflow-hidden cursor-pointer">
+        <img src={dddone} alt="dddone" className="h-full w-full object-cover" />
+        <div className="absolute font-epilogue top-88 left-8 bg-white text-[#1f2538] text-[10px] font-semibold rounded-full px-3 py-1 select-none">
+          <h4>Motion</h4>
+        </div>
+        <h1 className="absolute font-epilogue bottom-8 left-8 text-white text-[40px] font-extrabold drop-shadow-lg select-none">
+          DDDone
+        </h1>
+      </article>
+    </div>
+  );
+
   return (
     <>
       <div className="bg-[#28293E] text-white">
@@ -140,68 +232,17 @@ function Lastestworking() {
               </button>
             </nav>
 
-            <div className="grid grid-cols-6 gap-6 max-w-7xl mx-auto mt-15">
-              <article className="col-span-2 relative rounded-lg overflow-hidden cursor-pointer">
-                <img
-                  src={sofa}
-                  alt="sofa"
-                  className="h-full w-full object-cover"
-                />
-                <div className="absolute font-epilogue top-95 left-8 bg-white text-[#1f2538] text-[10px] font-semibold rounded-full px-3 py-1 select-none">
-                  <h4>Design</h4>
-                </div>
-                <h1 className="absolute font-epilogue bottom-8 left-8 text-white text-[40px] font-extrabold drop-shadow-lg select-none">
-                  SOFA
-                </h1>
-              </article>
-
-              <article className="col-span-4 relative rounded-lg overflow-hidden cursor-pointer">
-                <img
-                  src={keyboard}
-                  alt="keyboard"
-                  className="h-full w-full object-cover"
-                />
-                <div className="absolute top-95 left-8 bg-white text-[#1f2538] text-[10px] font-semibold rounded-full px-3 py-1 select-none font-epilogue">
-                  <h4>Branding</h4>
-                </div>
-                <h1 className="absolute bottom-8 left-8 text-white text-[40px] font-epilogue font-extrabold drop-shadow-lg select-none">
-                  KeyBoard
-                </h1>
-              </article>
-
-              <article className="col-span-4 relative rounded-lg overflow-hidden cursor-pointer">
-                <img
-                  src={workmedia}
-                  alt="workmedia"
-                  className="h-full w-full object-cover"
-                />
-                <div className="absolute font-epilogue top-95 left-8 bg-white text-[#1f2538] text-[10px] font-semibold rounded-full px-3 py-1 select-none">
-                  <h4>Illustration</h4>
-                </div>
-                <h1 className="absolute font-epilogue bottom-8 left-8 text-white text-[40px] font-extrabold drop-shadow-lg select-none">
-                  Work Media
-                </h1>
-              </article>
-
-              <article className="col-span-2 relative rounded-lg overflow-hidden cursor-pointer">
-                <img
-                  src={dddone}
-                  alt="dddone"
-                  className="h-full w-full object-cover"
-                />
-                <div className="absolute font-epilogue top-95 left-8 bg-white text-[#1f2538] text-[10px] font-semibold rounded-full px-3 py-1 select-none">
-                  <h4>Motion</h4>
-                </div>
-                <h1 className="absolute font-epilogue bottom-8 left-8 text-white text-[40px] font-extrabold drop-shadow-lg select-none">
-                  DDDone
-                </h1>
-              </article>
-            </div>
-
-            <div className="flex justify-center mt-12">
-              <a href="/"><button className="text-[10px] font-epilogue font-semibold text-white border border-white px-4 py-2 hover:border-purple-500">
-                EXPLORE MORE
-              </button></a>
+            <GridContent />
+            <div>
+              {showMore && <GridContent />}
+              <div className="flex justify-center mt-12">
+                <button
+                  className="text-[10px] font-epilogue font-semibold text-white border border-white px-4 py-2 hover:border-purple-500"
+                  onClick={() => setShowMore(!showMore)}
+                >
+                  {showMore ? "HIDE" : "EXPLORE MORE"}
+                </button>
+              </div>
             </div>
           </section>
 
@@ -221,9 +262,11 @@ function Lastestworking() {
               <h2 className="text-[24px] font-epilogue font-extrabold text-[#1f2538] w-[]">
                 We Help Companies Move Faster
               </h2>
-              <a href="/"><button className="bg-[#EF6D58] font-epilogue text-white text-[16px] w-[154px] h-[58px] font-semibold rounded px-4 py-2 hover:bg-[#b85a4d] transition-colors duration-300">
-                CONTACT US
-              </button></a>
+              <a href="/">
+                <button className="bg-[#EF6D58] font-epilogue text-white text-[16px] w-[154px] h-[58px] font-semibold rounded px-4 py-2 hover:bg-[#b85a4d] transition-colors duration-300">
+                  CONTACT US
+                </button>
+              </a>
             </div>
 
             <img

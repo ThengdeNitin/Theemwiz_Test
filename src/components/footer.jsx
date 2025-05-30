@@ -212,10 +212,10 @@ function Footer() {
           <div className="max-w-7xl mx-auto mt-16 pt-6 border-t border-[#E6D3B3] flex flex-col md:flex-row justify-between text-[16px] text-[#8B6E4A] px-2 font-epilogue">
             <p>Copyright © 2022 Laaiq. All Rights Reserved.</p>
             <div className="flex space-x-8 mt-4 md:mt-0">
-              <a className="hover:underline font-epilogue" href="/">
+              <a className="font-epilogue" href="/">
                 Terms of Use
               </a>
-              <a className="hover:underline font-epilogue" href="/">
+              <a className="font-epilogue" href="/">
                 Privacy Policy
               </a>
             </div>
@@ -342,10 +342,10 @@ function Footer() {
               Copyright © 2022 Laaiq. All Rights Reserved.
             </span>
             <div className="flex space-x-38 mt-4 md:mt-0">
-              <a className="hover:underline font-epilogue" href="/">
+              <a className="font-epilogue" href="/">
                 Terms of Use
               </a>
-              <a className="hover:underline font-epilogue" href="/">
+              <a className="font-epilogue" href="/">
                 Privacy Policy
               </a>
             </div>

@@ -1,19 +1,66 @@
 import "../App.css";
-import logo from "../assets/experiance/logo.png";
+import React, { useState } from "react";
+// import logo from "../assets/experiance/logo.png";
+import travel from "../assets/experiance/travel.png";
+import digitalside from "../assets/experiance/digitalside.png";
+import fusion from "../assets/experiance/fuzion.png";
+import vortex from "../assets/experiance/vortex.png";
+import mediafury from "../assets/experiance/mediafury.png";
 import logo_mv from "../assets/experiance/logos_mv.png";
 import leftpic from "../assets/experiance/leftpic.png";
 import videobg from "../assets/experiance/videobg.png";
 import play from "../assets/experiance/play.png";
 
 function Expsection() {
+  const [isPlaying, setIsPlaying] = useState(false);
+
   return (
     <>
       <div className="bg-[#FDF0E9] text-[#3B1F0B] min-h-screen flex flex-col">
-        <header className="hidden md:flex border-b border-[#E6D4C3] py-16 px-4 justify-center max-w-7xl mx-auto w-full">
-          {/*Desktop View*/}
-          <nav className="hidden md:flex justify-between items-center w-full max-w-5xl">
-            <img src={logo} alt="logo" className="h-full w-auto" />
+        <header
+          className="hidden md:flex border-b border-[#E6D4C3] py-16 px-4 justify-center max-w-7xl mx-auto w-full overflow-hidden"
+          style={{ position: "relative" }}
+        >
+          {/* Desktop View */}
+          <nav className="hidden md:flex items-center w-full max-w-7xl overflow-hidden">
+            <div
+              className="flex gap-25 whitespace-nowrap"
+              style={{
+                animation: "slide 20s linear infinite",
+                display: "flex",
+                width: "max-content",
+              }}
+            >
+              <img
+                src={digitalside}
+                alt="logo"
+                className="w-[147px] h-[42px]"
+              />
+              <img src={vortex} alt="logo" className="w-[108px] h-[32px]" />
+              <img src={travel} alt="logo" className="w-[119px] h-[47px]" />
+              <img src={fusion} alt="logo" className="w-[86px] h-[21px]" />
+              <img src={mediafury} alt="logo" className="w-[126px] h-[24px]" />
+              <img
+                src={digitalside}
+                alt="logo"
+                className="w-[147px] h-[42px]"
+              />
+              <img src={vortex} alt="logo" className="w-[108px] h-[32px]" />
+              <img src={travel} alt="logo" className="w-[119px] h-[47px]" />
+              <img src={fusion} alt="logo" className="w-[86px] h-[21px]" />
+              <img src={mediafury} alt="logo" className="w-[126px] h-[24px]" />
+            </div>
           </nav>
+
+          {/* Add keyframes directly in the component */}
+          <style>
+            {`
+          @keyframes slide {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+          }
+        `}
+          </style>
         </header>
 
         <header className="flex md:hidden border-b border-[#E6D4C3] py-10 px-10 justify-center max-w-7xl mx-auto w-full">
@@ -44,12 +91,14 @@ function Expsection() {
                 to partner on the long run, and work as an extension of the
                 merchant's team.
               </p>
-              <a href="/"><button
-                type="button"
-                className="bg-white text-[#3B1F0B] text-xs font-bold px-4 py-2 font-epilogue rounded shadow-sm hover:bg-[#f0e6dc] transition"
-              >
-                <h4>ABOUT US</h4>
-              </button></a>
+              <a href="/">
+                <button
+                  type="button"
+                  className="bg-white text-[#3B1F0B] text-xs font-bold px-4 py-2 font-epilogue rounded shadow-sm hover:bg-[#f0e6dc] transition"
+                >
+                  <h4>ABOUT US</h4>
+                </button>
+              </a>
             </div>
           </section>
 
@@ -121,18 +170,34 @@ function Expsection() {
 
           <section className="max-w-7xl justify-between mx-auto flex flex-col md:flex-row md:gap-5 items-center">
             <div className="relative !w-[570px] !h-[368px] rounded-md overflow-hidden shadow-lg">
-              <img src={videobg} alt="videobg" className="h-full w-full" />
-              <img
-                src={play}
-                alt="play"
-                className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[148px] h-[148px]"
-              />
-              <div
-                aria-hidden="true"
-                className="absolute bottom-4 left-4 text-xs text-white font-semibold bg-black/30 rounded px-1"
-              >
-                1:45
-              </div>
+              {isPlaying ? (
+                <iframe
+                  width="570"
+                  height="368"
+                  src="https://www.youtube.com/embed/jDLuJLoaA_g?autoplay=1"
+                  title="YouTube video"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full"
+                ></iframe>
+              ) : (
+                <>
+                  <img src={videobg} alt="videobg" className="h-full w-full" />
+                  <img
+                    src={play}
+                    alt="play"
+                    onClick={() => setIsPlaying(true)}
+                    className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[148px] h-[148px] cursor-pointer"
+                  />
+                  <div
+                    aria-hidden="true"
+                    className="absolute bottom-4 left-4 text-xs text-white font-semibold bg-black/30 rounded px-1"
+                  >
+                    1:45
+                  </div>
+                </>
+              )}
             </div>
 
             <div className="relative !w-[570px] !h-[368px] mt-40">
@@ -175,12 +240,13 @@ function Expsection() {
                 to partner on the long run, and work as an extension of the
                 merchant's team.
               </p>
-              <a href="/"><button
-                type="button"
-                className="bg-white text-[#3B1F0B] w-[138px] h-[48px] text-[16px] font-bold px-4 py-2 mt-10 mb-8 rounded shadow-sm hover:bg-[#f0e6dc] transition font-epilogue"
-              >
-                ABOUT US
-              </button>
+              <a href="/">
+                <button
+                  type="button"
+                  className="bg-white text-[#3B1F0B] w-[138px] h-[48px] text-[16px] font-bold px-4 py-2 mt-10 mb-8 rounded shadow-sm hover:bg-[#f0e6dc] transition font-epilogue"
+                >
+                  ABOUT US
+                </button>
               </a>
             </div>
           </section>
