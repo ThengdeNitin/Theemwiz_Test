@@ -1,5 +1,6 @@
 import "../App.css";
 import React, { useState } from "react";
+import GallerySection from "../components/gallerysection";
 import sofa from "../assets/lastestworking/sofa.png";
 import keyboard from "../assets/lastestworking/keyboard.png";
 import workmedia from "../assets/lastestworking/workmedia.png";
@@ -19,7 +20,6 @@ import rightarrow from "../assets/lastestworking/rightarrow.png";
 
 function Lastestworking() {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [showMore, setShowMore] = useState(false);
   const slideWidth = 100;
 
   const teamMembers = [
@@ -151,58 +151,7 @@ function Lastestworking() {
     { label: "Motion", value: "Motion", count: 2 },
   ];
 
-  const GridContent = () => (
-    <div className="grid grid-cols-6 gap-6 max-w-7xl mx-auto mt-15">
-      <article className="col-span-2 relative rounded-lg overflow-hidden cursor-pointer">
-        <img src={sofa} alt="sofa" className="h-full w-full object-cover" />
-        <div className="absolute font-epilogue top-88 left-8 bg-white text-[#1f2538] text-[10px] font-semibold rounded-full px-3 py-1 select-none">
-          <h4>Design</h4>
-        </div>
-        <h1 className="absolute font-epilogue bottom-8 left-8 text-white text-[40px] font-extrabold drop-shadow-lg select-none">
-          SOFA
-        </h1>
-      </article>
-
-      <article className="col-span-4 relative rounded-lg overflow-hidden cursor-pointer">
-        <img
-          src={keyboard}
-          alt="keyboard"
-          className="h-full w-full object-cover"
-        />
-        <div className="absolute top-88 left-8 bg-white text-[#1f2538] text-[10px] font-semibold rounded-full px-3 py-1 select-none font-epilogue">
-          <h4>Branding</h4>
-        </div>
-        <h1 className="absolute bottom-8 left-8 text-white text-[40px] font-epilogue font-extrabold drop-shadow-lg select-none">
-          KeyBoard
-        </h1>
-      </article>
-
-      <article className="col-span-4 relative rounded-lg overflow-hidden cursor-pointer">
-        <img
-          src={workmedia}
-          alt="workmedia"
-          className="h-full w-full object-cover"
-        />
-        <div className="absolute font-epilogue top-88 left-8 bg-white text-[#1f2538] text-[10px] font-semibold rounded-full px-3 py-1 select-none">
-          <h4>Illustration</h4>
-        </div>
-        <h1 className="absolute font-epilogue bottom-8 left-8 text-white text-[40px] font-extrabold drop-shadow-lg select-none">
-          Work Media
-        </h1>
-      </article>
-
-      <article className="col-span-2 relative rounded-lg overflow-hidden cursor-pointer">
-        <img src={dddone} alt="dddone" className="h-full w-full object-cover" />
-        <div className="absolute font-epilogue top-88 left-8 bg-white text-[#1f2538] text-[10px] font-semibold rounded-full px-3 py-1 select-none">
-          <h4>Motion</h4>
-        </div>
-        <h1 className="absolute font-epilogue bottom-8 left-8 text-white text-[40px] font-extrabold drop-shadow-lg select-none">
-          DDDone
-        </h1>
-      </article>
-    </div>
-  );
-
+ 
   return (
     <>
       <div className="bg-[#28293E] text-white">
@@ -214,36 +163,8 @@ function Lastestworking() {
             <h1 className="text-[56px] font-epilogue font-extrabold text-center mb-6">
               Latest Work
             </h1>
-            <nav className="flex justify-center space-x-12 text-xs text-[#7a7a7a] mb-10 font-semibold">
-              <button className="relative after:content-['14'] after:absolute text-white after:-top-2 after:-right-3 after:bg-[#1f2538] after:text-[#7a7a7a] font-epilogue after:text-[10px] after:font-semibold after:px-[4px] after:rounded-full">
-                <h4>Show All</h4>
-              </button>
-              <button className="relative after:content-['9'] after:absolute after:-top-2 after:-right-3 after:bg-[#1f2538] after:text-[#7a7a7a] after:text-[10px] font-epilogue after:font-semibold after:px-[4px] after:rounded-full">
-                <h4>Design</h4>
-              </button>
-              <button className="relative after:content-['4'] after:absolute after:-top-2 after:-right-3 after:bg-[#1f2538] after:text-[#7a7a7a] after:text-[10px] font-epilogue after:font-semibold after:px-[4px] after:rounded-full">
-                <h4>Branding</h4>
-              </button>
-              <button className="relative after:content-['3'] after:absolute after:-top-2 after:-right-3 after:bg-[#1f2538] after:text-[#7a7a7a] after:text-[10px] font-epilogue after:font-semibold after:px-[4px] after:rounded-full">
-                <h4>Illustration</h4>
-              </button>
-              <button className="relative after:content-['2'] after:absolute after:-top-2 after:-right-3 after:bg-[#1f2538] after:text-[#7a7a7a] after:text-[10px] font-epilogue after:font-semibold after:px-[4px] after:rounded-full">
-                <h4>Motion</h4>
-              </button>
-            </nav>
 
-            <GridContent />
-            <div>
-              {showMore && <GridContent />}
-              <div className="flex justify-center mt-12">
-                <button
-                  className="text-[10px] font-epilogue font-semibold text-white border border-white px-4 py-2 hover:border-purple-500"
-                  onClick={() => setShowMore(!showMore)}
-                >
-                  {showMore ? "HIDE" : "EXPLORE MORE"}
-                </button>
-              </div>
-            </div>
+            <GallerySection/>
           </section>
 
           <section

@@ -7,6 +7,26 @@ import minus from "../assets/pricing/minus.png";
 
 function Pricing() {
   const [openIndex, setOpenIndex] = useState(0);
+  const [toggles, setToggles] = useState({
+    brandDesign: false,
+    marketAnalysis: false,
+    production: false,
+    brandDesign1: false,
+    marketAnalysis1: false,
+    production1: false,
+    brandDesign2: false,
+    marketAnalysis2: false,
+    production2: false,
+  });
+
+  const toggle = (key) => {
+    setToggles((prev) => ({
+      ...prev,
+      [key]: !prev[key],
+    }));
+  };
+
+
   const faqs = [
     {
       question: "A digital agency is a business",
@@ -58,40 +78,64 @@ function Pricing() {
                   Your digital marketing efforts, instead of handling in-house.
                 </p>
                 <ul className="space-y-3 mb-8 text-sm text-[#6B5B4B]">
-                  <li className="flex font-epilogue items-center gap-2">
+                  <li
+                    className="flex font-epilogue items-center gap-2 cursor-pointer"
+                    onClick={() => toggle("brandDesign")}
+                  >
                     <span
                       className="flex items-center justify-center w-5 h-5 rounded-full bg-[#EF6D58] text-white text-[16px]"
                       aria-hidden="true"
                     >
-                      <img src={plus} alt="plus" className="h-full w-full" />
+                      <img
+                        src={toggles.brandDesign ? minus : plus}
+                        alt={toggles.brandDesign ? "minus" : "plus"}
+                        className="h-full w-full"
+                      />
                     </span>
                     Brand Design
                   </li>
-                  <li className="flex font-epilogue items-center gap-2">
+
+                  <li
+                    className="flex font-epilogue items-center gap-2 cursor-pointer"
+                    onClick={() => toggle("marketAnalysis")}
+                  >
                     <span
-                      className="flex items-center justify-center w-5 h-5 rounded-full bg-[#F0D9CC] text-[#D9C6B9] text-[16px]"
+                      className="flex items-center justify-center w-5 h-5 rounded-full bg-[#EF6D58] text-white text-[16px]"
                       aria-hidden="true"
                     >
-                      <img src={minus} alt="minus" className="h-full w-full" />
+                      <img
+                        src={toggles.marketAnalysis ? plus : minus}
+                        alt={toggles.marketAnalysis ? "plus" : "minus"}
+                        className="h-full w-full"
+                      />
                     </span>
                     Market Analysis
                   </li>
-                  <li className="flex font-epilogue items-center gap-2">
+
+                  <li
+                    className="flex font-epilogue items-center gap-2 cursor-pointer"
+                    onClick={() => toggle("production")}
+                  >
                     <span
-                      className="flex items-center justify-center w-5 h-5 rounded-full bg-[#F0D9CC] text-[#D9C6B9] text-[16px]"
+                      className="flex items-center justify-center w-5 h-5 rounded-full bg-[#EF6D58] text-white text-[16px]"
                       aria-hidden="true"
                     >
-                      <img src={minus} alt="minus" className="h-full w-full" />
+                      <img
+                        src={toggles.production ? plus : minus}
+                        alt={toggles.production ? "plus" : "minus"}
+                        className="h-full w-full"
+                      />
                     </span>
                     Production
                   </li>
                 </ul>
-                <a href="/"><button
-                  type="button"
-                  className="font-extrabold text-[16px] w-[158px] h-[48px] uppercase bg-white text-[#3B1F0B] px-5 py-2 rounded shadow-[0_2px_6px_rgba(0,0,0,0.1)] font-epilogue hover:shadow-[0_4px_12px_rgba(0,0,0,0.15)] transition-shadow"
-                >
-                  Contact Us
-                </button>
+                <a href="/">
+                  <button
+                    type="button"
+                    className="font-extrabold text-[16px] w-[158px] h-[48px] uppercase bg-white text-[#3B1F0B] px-5 py-2 rounded shadow-[0_2px_6px_rgba(0,0,0,0.1)] font-epilogue hover:shadow-[0_4px_12px_rgba(0,0,0,0.15)] transition-shadow"
+                  >
+                    Contact Us
+                  </button>
                 </a>
               </article>
 
@@ -110,40 +154,65 @@ function Pricing() {
                   promote.
                 </p>
                 <ul className="space-y-3 mb-8 text-[16px] text-[#6B5B4B]">
-                  <li className="flex font-epilogue items-center gap-2">
+                  <li
+                    className="flex font-epilogue items-center gap-2 cursor-pointer"
+                    onClick={() => toggle("brandDesign1")}
+                  >
                     <span
                       className="flex items-center justify-center w-5 h-5 rounded-full bg-[#EF6D58] text-white text-xs"
                       aria-hidden="true"
                     >
-                      <img src={plus} alt="plus" className="h-full w-full" />
+                      <img
+                        src={toggles.brandDesign1 ? minus : plus}
+                        alt={toggles.brandDesign1 ? "minus" : "plus"}
+                        className="h-full w-full"
+                      />
                     </span>
                     Brand Design
                   </li>
-                  <li className="flex font-epilogue items-center gap-2">
+
+                  <li
+                    className="flex font-epilogue items-center gap-2 cursor-pointer"
+                    onClick={() => toggle("marketAnalysis1")}
+                  >
                     <span
                       className="flex items-center justify-center w-5 h-5 rounded-full bg-[#EF6D58] text-white text-xs"
                       aria-hidden="true"
                     >
-                      <img src={plus} alt="minus" className="h-full w-full" />
+                      <img
+                        src={toggles.marketAnalysis1 ? minus : plus}
+                        alt={toggles.marketAnalysis1 ? "minus" : "plus"}
+                        className="h-full w-full"
+                      />
                     </span>
                     Market Analysis
                   </li>
-                  <li className="flex font-epilogue items-center gap-2">
+
+                  <li
+                    className="flex font-epilogue items-center gap-2 cursor-pointer"
+                    onClick={() => toggle("production1")}
+                  >
                     <span
                       className="flex items-center justify-center w-5 h-5 rounded-full bg-[#F0D9CC] text-[#D9C6B9] text-xs"
                       aria-hidden="true"
                     >
-                      <img src={minus} alt="minus" className="h-full w-full" />
+                      <img
+                        src={toggles.production1 ? plus : minus}
+                        alt={toggles.production1 ? "plus" : "minus"}
+                        className="h-full w-full"
+                      />
                     </span>
                     Production
                   </li>
                 </ul>
-                <a href="/"><button
-                  type="button"
-                  className="font-extrabold text-[16px] w-[158px] h-[48px] uppercase bg-[#EF6D58] text-white px-5 py-2 rounded shadow-[0_2px_6px_rgba(0,0,0,0.1)] font-epilogue hover:shadow-[0_4px_12px_rgba(0,0,0,0.15)] transition-shadow"
-                >
-                  Contact Us
-                </button></a>
+                <a href="/">
+                  <button
+                    type="button"
+                    className="font-extrabold text-[16px] w-[158px] h-[48px] uppercase bg-[#EF6D58] text-white px-5 py-2 rounded shadow-[0_2px_6px_rgba(0,0,0,0.1)] font-epilogue hover:shadow-[0_4px_12px_rgba(0,0,0,0.15)] transition-shadow"
+                  >
+                    Contact Us
+                  </button>
+                </a>
               </article>
 
               <article className="flex-1 bg-[#FAEBD7] border border-[#EF6D58] rounded-md p-6 md:p-7">
@@ -156,41 +225,63 @@ function Pricing() {
                 <p className="text-[16px] font-epilogue text-[#6B5B4B] mb-6 leading-relaxed">
                   Help you hit your marketing goals and grow your business.
                 </p>
-                <ul className="space-y-3 mb-8 text-[16px] text-[#6B5B4B]">
-                  <li className="flex  font-epilogue items-center gap-2">
-                    <span
-                      className="flex items-center justify-center w-5 h-5 rounded-full bg-[#EF6D58] text-white text-xs"
-                      aria-hidden="true"
+                  <ul className="space-y-3 mb-8 text-[16px] text-[#6B5B4B]">
+                    <li
+                      className="flex font-epilogue items-center gap-2 cursor-pointer"
+                      onClick={() => toggle("brandDesign2")}
                     >
-                      <img src={plus} alt="plus" className="h-full w-full" />
-                    </span>
-                    Brand Design
-                  </li>
-                  <li className="flex font-epilogue items-center gap-2">
-                    <span
-                      className="flex items-center justify-center w-5 h-5 rounded-full bg-[#EF6D58] text-white text-xs"
-                      aria-hidden="true"
+                      <span
+                        className="flex items-center justify-center w-5 h-5 rounded-full bg-[#EF6D58] text-white text-xs"
+                        aria-hidden="true"
+                      >
+                        <img
+                          src={toggles.brandDesign2 ? minus : plus}
+                          alt={toggles.brandDesign2 ? "minus" : "plus"}
+                          className="h-full w-full"
+                        />
+                      </span>
+                      Brand Design
+                    </li>
+                    <li
+                      className="flex font-epilogue items-center gap-2 cursor-pointer"
+                      onClick={() => toggle("marketAnalysis2")}
                     >
-                      <img src={plus} alt="minus" className="h-full w-full" />
-                    </span>
-                    Market Analysis
-                  </li>
-                  <li className="flex font-epilogue items-center gap-2">
-                    <span
-                      className="flex items-center justify-center w-5 h-5 rounded-full bg-[#EF6D58] text-white text-xs"
-                      aria-hidden="true"
+                      <span
+                        className="flex items-center justify-center w-5 h-5 rounded-full bg-[#EF6D58] text-white text-xs"
+                        aria-hidden="true"
+                      >
+                        <img
+                          src={toggles.marketAnalysis2 ? minus : plus}
+                          alt={toggles.marketAnalysis2 ? "minus" : "plus"}
+                          className="h-full w-full"
+                        />
+                      </span>
+                      Market Analysis
+                    </li>
+                    <li
+                      className="flex font-epilogue items-center gap-2 cursor-pointer"
+                      onClick={() => toggle("production2")}
                     >
-                      <img src={plus} alt="minus" className="h-full w-full" />
-                    </span>
-                    Production
-                  </li>
-                </ul>
-                <a href="/"><button
-                  type="button"
-                  className="font-extrabold text-[16px] w-[158px] h-[48px] uppercase bg-white text-[#3B1F0B] px-5 py-2 rounded shadow-[0_2px_6px_rgba(0,0,0,0.1)] font-epilogue hover:shadow-[0_4px_12px_rgba(0,0,0,0.15)] transition-shadow"
-                >
-                  Contact Us
-                </button>
+                      <span
+                        className="flex items-center justify-center w-5 h-5 rounded-full bg-[#EF6D58] text-white text-xs"
+                        aria-hidden="true"
+                      >
+                        <img
+                          src={toggles.production2 ? minus : plus}
+                          alt={toggles.production2 ? "minus" : "plus"}
+                          className="h-full w-full"
+                        />
+                      </span>
+                      Production
+                    </li>
+                  </ul>
+                <a href="/">
+                  <button
+                    type="button"
+                    className="font-extrabold text-[16px] w-[158px] h-[48px] uppercase bg-white text-[#3B1F0B] px-5 py-2 rounded shadow-[0_2px_6px_rgba(0,0,0,0.1)] font-epilogue hover:shadow-[0_4px_12px_rgba(0,0,0,0.15)] transition-shadow"
+                  >
+                    Contact Us
+                  </button>
                 </a>
               </article>
             </div>
@@ -324,12 +415,13 @@ function Pricing() {
                     </li>
                   </ul>
                 </div>
-                <a href="/"><button
-                  type="button"
-                  className="mb-6 font-extrabold text-[16px] w-[158px] h-[48px] uppercase bg-white text-[#3B1F0B] px-5 py-2 rounded shadow hover:shadow-lg transition-shadow font-epilogue"
-                >
-                  Contact Us
-                </button>
+                <a href="/">
+                  <button
+                    type="button"
+                    className="mb-6 font-extrabold text-[16px] w-[158px] h-[48px] uppercase bg-white text-[#3B1F0B] px-5 py-2 rounded shadow hover:shadow-lg transition-shadow font-epilogue"
+                  >
+                    Contact Us
+                  </button>
                 </a>
               </article>
 
@@ -373,12 +465,14 @@ function Pricing() {
                     </li>
                   </ul>
                 </div>
-                <a href="/"><button
-                  type="button"
-                  className="mt-6 mb-4 font-extrabold text-[16px] w-[158px] h-[48px] uppercase bg-[#EF6D58] text-white px-5 py-2 rounded shadow hover:shadow-lg font-epilogue transition-shadow"
-                >
-                  Contact Us
-                </button></a>
+                <a href="/">
+                  <button
+                    type="button"
+                    className="mt-6 mb-4 font-extrabold text-[16px] w-[158px] h-[48px] uppercase bg-[#EF6D58] text-white px-5 py-2 rounded shadow hover:shadow-lg font-epilogue transition-shadow"
+                  >
+                    Contact Us
+                  </button>
+                </a>
               </article>
 
               <article className="w-[329px] h-[493px] flex flex-col justify-between bg-[#FAEBD7] border border-[#EF6D58] rounded-md p-6 md:p-7">
@@ -414,12 +508,12 @@ function Pricing() {
                   </ul>
                 </div>
                 <a href="/">
-                <button
-                  type="button"
-                  className="mt-6 mb-4 font-extrabold text-[16px] w-[158px] h-[48px] uppercase bg-white text-[#3B1F0B] px-5 py-2 rounded shadow hover:shadow-lg font-epilogue transition-shadow"
-                >
-                  Contact Us
-                </button>
+                  <button
+                    type="button"
+                    className="mt-6 mb-4 font-extrabold text-[16px] w-[158px] h-[48px] uppercase bg-white text-[#3B1F0B] px-5 py-2 rounded shadow hover:shadow-lg font-epilogue transition-shadow"
+                  >
+                    Contact Us
+                  </button>
                 </a>
               </article>
             </div>
@@ -438,12 +532,12 @@ function Pricing() {
                 A digital agency is a business you hire to outsource your
                 digital marketing efforts, instead of handling in-house.
               </p>
-              <a href="/"><p className="text-[16px] font-epilogue font-extrabold text-[#3B1F0B] cursor-pointer select-none">
-                Contact Us
-              </p>
+              <a href="/">
+                <p className="text-[16px] font-epilogue font-extrabold text-[#3B1F0B] cursor-pointer select-none">
+                  Contact Us
+                </p>
               </a>
             </div>
-
           </section>
         </main>
       </div>
