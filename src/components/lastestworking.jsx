@@ -1,7 +1,7 @@
 import "../App.css";
 import React, { useState } from "react";
 import GallerySection from "../components/gallerysection";
-import MobileGallerySection from "../components/gallerysectionmobile"
+import MobileGallerySection from "../components/gallerysectionmobile";
 import sofa from "../assets/lastestworking/sofa.png";
 import keyboard from "../assets/lastestworking/keyboard.png";
 import workmedia from "../assets/lastestworking/workmedia.png";
@@ -34,7 +34,7 @@ function Lastestworking() {
       img: roelof,
       name: "Roelof Bekkenenks",
       role: "React Developer",
-      imgStyles: "h-[232px] w-[259px] object-contain -mb-[42px]",
+      imgStyles: "h-[232px] w-[259px] object-contain -mb-[25px]",
     },
     {
       img: leonardo,
@@ -46,7 +46,7 @@ function Lastestworking() {
       img: izabella,
       name: "Izabella Tabakova",
       role: "Product Designer",
-      imgStyles: "h-[233px] w-[230px] object-contain -mb-[32px]",
+      imgStyles: "h-[233px] w-[230px] object-contain -mb-[16px]",
     },
     {
       img: azah,
@@ -58,7 +58,7 @@ function Lastestworking() {
       img: roelof,
       name: "Roelof Bekkenenks",
       role: "React Developer",
-      imgStyles: "h-[232px] w-[259px] object-contain -mb-[42px]",
+      imgStyles: "h-[232px] w-[259px] object-contain -mb-[25px]",
     },
     {
       img: leonardo,
@@ -70,7 +70,7 @@ function Lastestworking() {
       img: izabella,
       name: "Izabella Tabakova",
       role: "Product Designer",
-      imgStyles: "h-[233px] w-[230px] object-contain -mb-[32px]",
+      imgStyles: "h-[233px] w-[230px] object-contain -mb-[16px]",
     },
     {
       img: azah,
@@ -82,7 +82,7 @@ function Lastestworking() {
       img: roelof,
       name: "Roelof Bekkenenks",
       role: "React Developer",
-      imgStyles: "h-[232px] w-[259px] object-contain -mb-[42px]",
+      imgStyles: "h-[232px] w-[259px] object-contain -mb-[25px]",
     },
     {
       img: leonardo,
@@ -94,7 +94,7 @@ function Lastestworking() {
       img: izabella,
       name: "Izabella Tabakova",
       role: "Product Designer",
-      imgStyles: "h-[233px] w-[230px] object-contain -mb-[32px]",
+      imgStyles: "h-[233px] w-[230px] object-contain -mb-[16px]",
     },
   ];
 
@@ -152,7 +152,9 @@ function Lastestworking() {
     { label: "Motion", value: "Motion", count: 2 },
   ];
 
- 
+  
+  
+
   return (
     <>
       <div className="bg-[#28293E] text-white">
@@ -164,7 +166,7 @@ function Lastestworking() {
             <h1 className="text-[56px] font-epilogue font-extrabold text-center mb-6">
               Latest Work
             </h1>
-            <GallerySection/>
+            <GallerySection />
           </section>
 
           <section
@@ -301,7 +303,7 @@ function Lastestworking() {
               Latest Work
             </h2>
 
-            <MobileGallerySection/>
+            <MobileGallerySection />
           </section>
 
           <section
@@ -351,7 +353,7 @@ function Lastestworking() {
               Team of Designers and Developers
             </h2>
 
-            <div className="flex flex-row gap-2 overflow-hidden">
+            {/* <div className="flex flex-row gap-2 overflow-hidden">
               <div className="flex flex-col !w-[270px] !h-[272px] flex-shrink-0">
                 <div className="border rounded-lg p-6 h-[250px] flex items-end justify-center">
                   <img
@@ -432,6 +434,45 @@ function Lastestworking() {
               <span className="w-2.5 h-2.5 rounded-full border border-[#3a3f5c]"></span>
               <span className="w-2.5 h-2.5 rounded-full border border-[#3a3f5c]"></span>
               <span className="w-2.5 h-2.5 rounded-full border border-[#3a3f5c]"></span>
+            </div> */}
+            <div className="w-full px-4">
+              <div className="flex flex-row gap-4 overflow-x-auto no-scrollbar snap-x snap-mandatory scroll-smooth">
+                {teamMembers.map((member, index) => (
+                  <div
+                    key={index}
+                    className="flex-shrink-0 snap-start w-[270px] h-[340px] flex flex-col"
+                  >
+                    <div className="border rounded-lg p-4 h-[290px] flex items-end justify-center">
+                      <img
+                        src={member.img}
+                        alt={member.name}
+                        className={`${member.imgStyles} object-contain`}
+                      />
+                    </div>
+                    <div className="text-left mt-3">
+                      <p className="font-bold text-white text-[20px] font-epilogue">
+                        {member.name}
+                      </p>
+                      <p className="text-[14px] text-[#7a7a7a] mt-1 font-epilogue">
+                        {member.title}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <div className="flex justify-center mt-8 overflow-x-auto scrollbar">
+                <div className="flex space-x-2 min-w-max">
+                  {teamMembers.map((_, index) => (
+                    <span
+                      key={index}
+                      className={`w-2.5 h-2.5 rounded-full ${
+                        index === 0 ? "bg-[#EF6D58]" : "border border-[#3a3f5c]"
+                      }`}
+                    ></span>
+                  ))}
+                </div>
+              </div>
             </div>
           </section>
         </main>
