@@ -13,6 +13,7 @@ import play from "../assets/experiance/play.png";
 
 function Expsection() {
   const [isPlaying, setIsPlaying] = useState(false);
+  const [isPlaying1, setIsPlaying1] = useState(false);
 
   return (
     <>
@@ -321,7 +322,7 @@ function Expsection() {
 
           <section className="max-w-7xl justify-between mx-auto mt-16 flex flex-col md:flex-row md:gap-5 items-center">
             <div className="relative w-[329px] h-[212px] rounded-md overflow-hidden shadow-lg">
-              <img src={videobg} alt="videobg" className="h-full w-full" />
+              {/* <img src={videobg} alt="videobg" className="h-full w-full" />
               <img
                 src={play}
                 alt="play"
@@ -332,7 +333,35 @@ function Expsection() {
                 className="absolute bottom-4 left-4 text-xs text-white font-semibold bg-black/30 rounded px-1"
               >
                 1:45
-              </div>
+              </div> */}
+              {isPlaying1 ? (
+                <iframe
+                  width="329"
+                  height="212"
+                  src="https://www.youtube.com/embed/jDLuJLoaA_g?autoplay=1"
+                  title="YouTube video"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full"
+                ></iframe>
+              ) : (
+                <>
+                  <img src={videobg} alt="videobg" className="h-full w-full" />
+                  <img
+                    src={play}
+                    alt="play"
+                    onClick={() => setIsPlaying1(true)}
+                    className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[148px] h-[148px] cursor-pointer"
+                  />
+                  <div
+                    aria-hidden="true"
+                    className="absolute bottom-4 left-4 text-xs text-white font-semibold bg-black/30 rounded px-1"
+                  >
+                    1:45
+                  </div>
+                </>
+              )}
             </div>
 
             <div className="relative mt-8">

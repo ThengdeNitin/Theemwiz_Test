@@ -334,7 +334,36 @@ function Footer() {
             </div>
 
             <div className="flex-1 flex justify-end items-start max-w-xs w-[160px] h-[48px] space-x-4">
-              <img src={social} alt="social" className="h-full w-auto" />
+            <a
+                href="https://www.facebook.com"
+                className="relative w-[48px] h-[48px]"
+              >
+                <img src={oval} alt="facebook" className="h-full w-auto" />
+                <img
+                  src={fb}
+                  alt="facebook logo"
+                  className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                />
+              </a>
+              <a href="https://x.com" className="relative w-[48px] h-[48px]">
+                <img src={oval} alt="twitter" className="h-full w-auto" />
+                <img
+                  src={twit}
+                  alt="twitter logo"
+                  className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                />
+              </a>
+              <a
+                href="https://www.instagram.com"
+                className="relative w-[48px] h-[48px]"
+              >
+                <img src={oval} alt="instagram" className="h-full w-auto" />
+                <img
+                  src={insta}
+                  alt="instagram logo"
+                  className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                />
+              </a>
             </div>
           </div>
           <div className="max-w-7xl mx-auto mt-16 pt-6 border-t border-[#E6D3B3] flex flex-col md:flex-row justify-between items-center text-[16px] text-[#8B6E4A] px-2 text-center">

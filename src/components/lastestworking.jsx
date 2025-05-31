@@ -1,6 +1,7 @@
 import "../App.css";
 import React, { useState } from "react";
 import GallerySection from "../components/gallerysection";
+import MobileGallerySection from "../components/gallerysectionmobile"
 import sofa from "../assets/lastestworking/sofa.png";
 import keyboard from "../assets/lastestworking/keyboard.png";
 import workmedia from "../assets/lastestworking/workmedia.png";
@@ -14,7 +15,7 @@ import azah from "../assets/lastestworking/Azah.png";
 import izabella from "../assets/lastestworking/Izabella.png";
 import leonardo from "../assets/lastestworking/Leonardo.png";
 import roelof from "../assets/lastestworking/Roelof.png";
-import triangle from "../assets/footer/Triangle.png";
+// import triangle from "../assets/footer/Triangle.png";
 import leftarrow from "../assets/lastestworking/leftarrow.png";
 import rightarrow from "../assets/lastestworking/rightarrow.png";
 
@@ -163,7 +164,6 @@ function Lastestworking() {
             <h1 className="text-[56px] font-epilogue font-extrabold text-center mb-6">
               Latest Work
             </h1>
-
             <GallerySection/>
           </section>
 
@@ -300,76 +300,8 @@ function Lastestworking() {
             <h2 className="text-[56px] font-epilogue font-extrabold text-center mb-6">
               Latest Work
             </h2>
-            <div className="relative flex w-full">
-              <select
-                aria-label="Subject"
-                className="appearance-none w-full border border-[#EF6D58] rounded-sm px-3 py-2 text-sm text-[#A78B5B] focus:outline-none focus:ring-1 font-epilogue focus:ring-[#E06A4F] bg-white"
-              >
-                <option disabled selected>
-                  Select All
-                </option>
-                <option>Design</option>
-                <option>Branding</option>
-                <option>Illustration</option>
-                <option>Motion</option>
-              </select>
 
-              <img
-                src={triangle}
-                alt="dropdown arrow"
-                className="pointer-events-none absolute right-3 top-1/2 transform -translate-y-1/2 w-[10px] h-[6px]"
-              />
-            </div>
-
-            <div className="flex flex-col gap-8 max-w-7xl mx-auto mt-8">
-              <article className="relative rounded-lg w-full h-[416px] overflow-hidden cursor-pointer">
-                <img
-                  src={sofa}
-                  alt="sofa"
-                  className="h-full w-full object-cover"
-                />
-                <div className="absolute top-75 left-8 bg-white text-[#1f2538] text-[10px] font-semibold rounded-full px-3 py-1 select-none font-epilogue">
-                  Design
-                </div>
-                <h3 className="absolute bottom-8 left-8 text-white text-[40px] font-extrabold drop-shadow-lg font-epilogue select-none">
-                  SOFA
-                </h3>
-              </article>
-
-              <article className="relative rounded-lg w-full h-[416px] overflow-hidden cursor-pointer">
-                <img
-                  src={keyboard}
-                  alt="keyboard"
-                  className="h-full w-full object-cover"
-                />
-                <div className="absolute top-75 left-8 font-epilogue bg-white text-[#1f2538] text-[10px] font-semibold rounded-full px-3 py-1 select-none">
-                  Branding
-                </div>
-                <h3 className="absolute bottom-8 left-8 font-epilogue text-white text-[40px] font-extrabold drop-shadow-lg select-none">
-                  KeyBoard
-                </h3>
-              </article>
-
-              <article className="relative rounded-lg w-full h-[416px] overflow-hidden cursor-pointer">
-                <img
-                  src={workmedia}
-                  alt="workmedia"
-                  className="h-full w-full object-cover"
-                />
-                <div className="absolute top-75 left-8 bg-white font-epilogue text-[#1f2538] text-[10px] font-semibold rounded-full px-3 py-1 select-none">
-                  Illustration
-                </div>
-                <h3 className="absolute bottom-8 left-8 text-white font-epilogue text-[40px] font-extrabold drop-shadow-lg select-none">
-                  Work Media
-                </h3>
-              </article>
-            </div>
-
-            <div className="flex justify-center mt-12">
-              <button className="text-[10px] font-semibold font-epilogue text-white border border-white px-4 py-2 hover:border-purple-500">
-                EXPLORE MORE
-              </button>
-            </div>
+            <MobileGallerySection/>
           </section>
 
           <section
